@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Setup Enrollment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../plugins/bootstrap/bootstrap.min.css" rel="stylesheet" />
+   <link href="../plugins/dropzone/dropzone.min.css" rel="stylesheet" />
+   <link href="../plugins/datepicker/datepicker.css" rel="stylesheet" />
+   <link href="../plugins/switch/lc_switch.css" rel="stylesheet" />
+  <link href="../css/style.css" rel="stylesheet" />
+ <link href="../plugins/toastr/toastr.css" rel="stylesheet" />
+    <link href="../plugins/summernote/summernote.min.css" rel="stylesheet"> 
+  <!--  <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.16/dist/summernote.min.css" rel="stylesheet"> -->
+   <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'/>
+     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+	<div class="main-header clearfix" id="divScreenHeader">	
+		<a class="logo cursor homeHeaderBackground col-sm-2" href="javascript:void(0)"> <!-- mini logo for sidebar mini 50x50 pixels -->
+			
+			<img class="clsCompanyLogo marginRight5px " alt="logo" src="../images/logoHeader.png">
+		</a>
+		<nav class="navbar navbar-static-top borderBottom1px paddingRight0px col-sm-10 nopad" >
+								
+			<div class="text-center pull-right bg-home">
+				<i class="fa fa-times fa-2x" aria-hidden="true"></i>		
+			</div>			
+		</nav>		
+	</div>
+	<div class='container-fluid contain-wrapper ' >
+		<div class="screenHeader screenHeaderChild clearfix row" >													
+			<div class='col-lg-2 font24'>				
+					Setup Enrollment				
+			</div>
+			<div class='wizard col-lg-10 nopad clearfix'>
+				<div class="border1pxGray progressBarButton">
+					<div class="roundButton floatLeft activeButton" data-id='summary' id="summary"><span>1</span></div>					
+					<span class='progressBarText'>Enrollment Summary</span>			
+				</div>
+				<div class="border1pxGray progressBarButton">
+					<div class="roundButton floatLeft disabledButton" data-id='setup' id="setup"><span>2</span></div>					
+					<span class='progressBarText'>Setup Instructions</span>														
+				</div>
+				<div class="border1pxGray progressBarButton">
+					<div class="roundButton floatLeft disabledButton" data-id='basic' id="censusInfo"><span>3</span></div>
+					<span class='progressBarText'>Confirm Census Info</span>								
+				</div>
+				<div class="border1pxGray progressBarButton">
+					<div class="roundButton floatLeft disabledButton" data-id='question'><span>4</span></div>					
+					<span class='progressBarText'>Setup Questions</span>									
+				</div>
+				<div class="border1pxGray progressBarButton">
+					<div class="roundButton floatLeft disabledButton" data-id='email'><span>5</span></div>					
+					<span class='progressBarText'>Setup Email</span>											
+				</div>
+				<div class="border1pxGray progressBarButton">
+					<div class="roundButton floatLeft disabledButton" data-id='document'><span>6</span></div>
+					<span class='progressBarText'>Setup Document</span>					
+				</div>
+				<div class="progressBarButton">
+					<div class="roundButton floatLeft disabledButton " data-id='others' ><span>7</span></div>
+					<span class='progressBarText'>Preview</span>						
+				</div>
+			</div>		
+		</div>		
+		<div class='clearfix'>
+			<div class='col-xs-12 nopad' id="divForAppend">
+											
+						</div>
+					</div>
+		
+				</div>
+	
+	
+	<!-- Modal -->
+	 <script  src="../plugins/jquery/jquery.min.js"></script> 
+	 
+	<script  src="../plugins/chart/Chart.min.js"></script>
+	<script  src="../plugins/chart/jscolor.js"></script>
+	<script  src="../plugins/toastr/toastr.js"></script>
+	<script  src="../plugins/summernote/summernote.min.js"></script>
+	<script  src="../plugins/bootstrap/bootstrap.min.js"></script>
+	<script  src="../plugins/dropzone/dropzone.min.js"></script>
+	<!-- <script  src="../plugins/dropzone/dropzone.js"></script> -->
+	<script  src="../plugins/switch/lc_switch.min.js"></script>
+	<script  src="../plugins/datepicker/datepicker.js"></script>
+<script  src="../js/common.js"></script>
+<script  src="../js/potalMethod.js"></script>
+<script  src="../js/env.js"></script> 
+
+
+ <script  src="../js/webService.js"></script> 
+
+ <div id="trnData">
+<input type="hidden" id="txtQuoteNumber">
+</div>
+<div id="divAuth" class="displayNone">
+				<input type="hidden" id="trnCode" />
+			</div> 
+	
+	<script >
+		$(document).ready(function() {
+			_url = location.href;
+			var quoteNo = _url.split('?');
+			var qNo = quoteNo[1].split('=');
+			redirecttoScreen("enrollmentDtls",qNo[1]);
+			///alert(qNo[1]);
+			///
+		    ////getLandingPageData(qNo[1]);
+		});
+	</script>
+	<div class="loaderImgClass" id="loaderImgClass">
+		<div class="loaderClass">
+			<div class="loaderImgTextClass" id="loaderImgTextClass"></div>
+		</div>
+	</div>
+	<div id="loading"></div>
+</body>
+</html>

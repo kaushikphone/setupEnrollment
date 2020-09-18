@@ -1,0 +1,915 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+   <title>Setup Enrollment</title>
+</head>
+<div id='setup' class="tabcontent ">
+					<div class="panel panel-default">
+						<div class="panel-heading title"  >
+							<h3 class="panel-title">								
+								Setup Instructions										 								
+							</h3>
+						</div>
+					</div>					
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+						<div class="panel panel-default" id="divForBannerTextAndInfo">
+							<div class="panel-heading" role="tab" id="headingOne">
+								<h4 class="panel-title row clearfix">								
+									<span class='col-xs-10 headTxt'><i class="accordion_icon fa fa-th-large"></i> Banner Text and Welcome Letter</span> 
+									
+									<span class='col-xs-2 nopad view'>
+									<!-- <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" 
+									aria-expanded="true" aria-controls="collapseOne"> -->
+									<button type="button" id="btnCollapseOne" class='btn-default btn btn-sm pull-right' onclick="hideShowBtnText('btnCollapseOne','collapseOne');">Hide</button></span>
+																	
+								</h4>
+							</div>
+							<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+								<div class="panel-body clearfix">								
+									<div class='news'>										
+										<div class="news-content">
+											<div  class="form-group">
+												<label>Banner Text</label>
+												<input id='txtBannerText' name="txtBannerText" type="text" class="form-control" aria-required="true">
+											</div>
+											<div  class="form-group">
+												<label>Welcome Letter</label>
+												<input id='txtWelcomeDescription' name="txtWelcomeDescription" type="text" class="form-control clsForSummerNote" aria-required="true">
+											</div>
+										</div>
+									</div>
+									<div class='news gap'>
+										<div class='title'>																
+											<h5>Learn About Your Benefits</h5>
+										</div>
+										<div class="news-content">											
+											<div  class="form-group">													
+												<input id='txtLearnBenefit' name="txtLearnBenefit" type="text" class="form-control clsForSummerNote" aria-required="true">
+											</div>
+										</div>
+									</div>																						
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default" id="divForSponserBasicInfo">
+							<div class="panel-heading" role="tab" id="headingTwo">
+								<h4 class="panel-title row clearfix">								
+									<span class='col-xs-10 headTxt'><i class="accordion_icon fa fa-th-large"></i> Sponsor Basic Information</span>
+									<span class='col-xs-2 nopad view'>
+									<!-- <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" 
+									aria-expanded="false" aria-controls="collapseTwo"> -->
+									<button type="button" class='btn-default btn btn-sm pull-right' id="btnCollapseTwo" onclick="hideShowBtnText('btnCollapseTwo','collapseTwo');">View</button></span> 								
+								</h4>
+							</div>
+							<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+								<div class="panel-body clearfix">
+									<div class='col-md-8 nopad-left'>
+										<div class='news'>
+											<div class='title'>														
+												<h5>Select a Banner Image</h5>
+											</div>
+											<div class="news-content bannerImage-content">
+												<div class="row clearfix">
+													<div class="col-sm-4 clearfix">
+														<span class='col-xs-1  col-md-1 nopad'><input type="radio" name="optradio" checked/></span>
+														<span class='col-xs-10 col-md-11 nopad'><img alt="image1" src='../images/4.jpg' class='img-responsive zoom'/></span>						
+													</div>
+													<div class="col-sm-4 clearfix">
+														<span class='col-xs-1 col-md-1 nopad'><input type="radio" name="optradio"/></span>
+														<span class='col-xs-10 col-md-11 nopad'><img alt="image2" src='../images/4.jpg' class='img-responsive zoom'/></span>				
+													</div>
+													<div class="col-sm-4 clearfix">
+														<span class='col-xs-1 col-md-1 nopad'><input type="radio" name="optradio" /></span>
+														<span class='col-xs-10 col-md-11 nopad'><img alt="image3" src='../images/4.jpg' class='img-responsive zoom'/></span>						
+													</div>
+												</div>
+												<div class="clearfix uploadImage">
+													<span class='col-sm-2 nopad'><h5>Upload Banner Image</h5></span>
+													<span class='col-sm-10'>
+														<form action="/file-upload" class="dropzone" id="formbanner">
+															<div class="fallback">
+																<input name="file" type="file" multiple />
+															</div>
+														</form>
+													</span>            
+												</div>										
+											</div>
+										</div>								
+									</div>
+									<div class='col-md-4 nopad' id='logos'>
+										<div class='news'>
+											<div class='title'>																	
+												<h5>Show Sponsor Name</h5>
+											</div>
+											<div role="form" class="form-horizontal">
+											<div class="news-content">
+											<div class="col-md-12 col-sm-12 form-check" >
+															<div class="form-group">
+																<span class='col-sm-8'>Show Sponsor Name</span>
+																<div class="col-sm-4">
+																	<input type="checkbox" name="chkSponsername"  class="lcs_check lcs_tt2 clsOffCheckbox"  id='chkSponsername'/>
+																	<div class="clearfix"></div>
+																</div>
+															</div>
+														</div>
+												<div class="col-md-12 col-sm-12 form-check" >
+															<div class="form-group">
+																<span class='col-sm-8'>Include Sponsor Logo</span>
+																<div class="col-sm-4">
+																	<input type="checkbox" name="chkSponserLogo"  class="lcs_check lcs_tt2 clsOffCheckbox"  id='chkSponserLogo'/>
+																	<div class="clearfix"></div>
+																</div>
+															</div>
+														</div>
+																																			
+												<div class="form-group clearfix uploadImage">
+													<span class='col-sm-5'><h5>Upload Sponsor Logo</h5></span>
+													<span class='col-sm-6'>
+														<form action="/file-upload" class="dropzone" id="formSponser">
+															<div class="fallback">
+																<input name="file" type="file" multiple />
+															</div>
+														</form>
+													</span>            
+												</div>												
+											</div>
+											</div>
+										</div>										
+									</div>
+									<input type="hidden" id="txtBannerBase64" value=""/>
+									<input type="hidden" id="txtSponserBase64" value=""/>
+									<div class='col-xs-12 nopad gap'>
+										<div class='news'>
+											<div class='title'>														
+												<h5>Select End User Colors</h5>
+											</div>
+											<div class="news-content colorScheme-content">
+												<div class="row clearfix">
+													<div class="col-sm-3">
+														<label>Sponsor Name</label>
+														<input name="txtSponserColor" class="jscolor form-control" id="txtSponserColor" value="#5A6C74"  title='Click to change existing color'>													
+													</div>
+													<div class="col-sm-3">
+														<label>Title Bar Under Photo</label>
+														<input name="txtTitlebarColor" class="jscolor form-control" id="txtTitlebarColor" value="#E7E7E7"  title='Click to change existing color'>									
+													</div>
+													<div class="col-sm-3">
+														<label>Title Banner Text Under Photo</label>
+														<input name="txtTitlebannerColor" class="jscolor form-control" id="txtTitlebannerColor" value="#5A6C74"  title='Click to change existing color'>
+													</div>
+													<div class="col-sm-3">
+														<label>TITLE</label>
+														<input name="txtTitleColor" class="jscolor form-control" id="txtTitleColor" value="#5A6C74"  title='Click to change existing color'>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default" id="divForplanInstruction">
+							<div class="panel-heading" role="tab" id="headingThree">
+								<h4 class="panel-title row clearfix">								
+									<span class='col-xs-10 headTxt'><i class="accordion_icon fa fa-th-large"></i> Plans Instruction </span>
+									<span class='col-xs-2 nopad view'>
+									<!-- <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> -->
+									<button type="button" class='btn-default btn btn-sm pull-right' id="btnCollapseThree" onclick="hideShowBtnText('btnCollapseThree','collapseThree');">View</button></span>								
+								</h4>
+							</div>
+							<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+								<div class="panel-body clearfix">
+									<div class='clearfix row'>
+										<div class='col-md-6 toggleButton '>
+											<div class='news'>
+												<div class='title clearfix'>																
+													<div class='col-xs-6 nopad'><h5>Enrollment Plan Name</h5></div>
+													<div class='col-xs-6'><h5>Enrollment Decline Option</h5></div>
+												</div>
+												<div class="news-content"> 
+													<div class="row clearfix">
+														<div class='col-xs-6'>										
+															<div  class="form-group">												
+																<input id='txtPlanName' name="txtPlanName" type="text" class="form-control" aria-required="true" value='Plan1' disabled>
+															</div>
+														</div>
+														<div class='col-xs-6 '>
+															<div class="form-group">
+																<input type="checkbox" name="chkDeclineOpt"  class="lcs_check lcs_tt2 clsOffCheckbox"  id='chkDeclineOpt'/>          
+															</div>
+														</div>
+													</div>	
+																					
+													<div class="form-group row clearfix"> 
+														<div class='col-sm-6'>
+															<h5>Enrollment Start Date</h5>													
+															<div class="col-sm-12 padding0px input-group " data-date="05/05/2020" data-date-format="mm/dd/yyyy" data-date-viewmode="years">						
+																<input class=" datepicker  "  type="text" id="txtEnrollmentStartDate" name="txtEnrollmentStartDate">
+																<span class="fa fa-calendar"></span>
+															</div>											
+														</div>
+														<div class='col-sm-6'>
+															<h5>Enrollment End Date</h5>								
+															<div class="input-group" data-date="06/05/2020" data-date-format="mm/dd/yyyy" data-date-viewmode="years">						
+																<input class=" datepicker"  type="text" id="txtEnrollmentEndDate" name="txtEnrollmentEndDate">
+																<span class="fa fa-calendar"></span>
+															</div>
+														</div>
+													</div>													
+													<div class="row clearfix"> 														
+														<div class='col-sm-6'>
+															<h5>Insert video link</h5>													
+															<div  class="form-group">												
+																<input id='txtVideoLink' name="txtVideoLink" type="text" class="form-control" aria-required="true">
+															</div>										
+														</div>
+														<div class='col-sm-6'>
+															<h5>Showing As</h5>													
+															<div  class="form-group">												
+																<select class="form-control" id="cmbShowingVideoLink">
+																	<option> Embedded</option>
+																	<option> New Tab</option>
+																</select>
+															</div>										
+														</div>														
+													</div>
+													<div class="row clearfix"> 
+														<div class='col-sm-6'>
+															<h5>Label for Unique ID</h5>													
+															<div  class="form-group">												
+																<input id='txtForUniqueID' name="txtForUniqueID" type="text" class="form-control" aria-required="true">
+															</div>										
+														</div>	
+														<div class='col-sm-6'>
+																							
+														</div>												
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class='col-md-6'>
+											<div class='news'>
+												<div class='title'>													
+													<h5>Contact Support Confirmation</h5>
+												</div>
+												<div class="news-content">											
+													<div  class="form-group">												
+														<input id='txtContactSupportConfirm' name="txtContactSupportConfirm" type="text" class="form-control clsForSummerNote" aria-required="true">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class='clearfix row'>										
+										<div class='col-md-12'>
+											<h4>Review Your Personalized Options</h4>
+											<div class='news'>
+												<div class='title'>														
+													<h5>Instructions on what to do for the table below</h5>
+												</div>
+												<div class="news-content">											
+													<div  class="form-group">												
+														<input id='txtInstTableBelow' name="txtInstTableBelow" type="text" class="form-control clsForSummerNote" aria-required="true">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class='col-md-12 gap'>
+											<div class='news'>
+												<div class='title'>																
+													<h5>Explanation on what is represented by annual income</h5>
+												</div>
+												<div class="news-content">											
+													<div  class="form-group">												
+														<input id='txtAnnualIncmRepresnted' name="txtAnnualIncmRepresnted" type="text" class="form-control clsForSummerNote" aria-required="true">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class='col-md-12 gap'>
+											<div class='news'>
+												<div class='title'>																
+													<h5>Directions for continuing enrollment process</h5>
+												</div>
+												<div class="news-content">											
+													<div  class="form-group">													
+														<input id='txtDirectionEnrollmentProcess' name="txtDirectionEnrollmentProcess" type="text" class="form-control clsForSummerNote" aria-required="true">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class='clearfix row '>										
+										<div class='col-md-12'>
+											<h4>Decline & Acceptance Messages</h4>
+											<div class='news'>
+												<div class='title'>																
+													<h5>Decline Pop-Up Message</h5>
+												</div>
+												<div class="news-content">											
+													<div  class="form-group">												
+														<input id='txtDeclinePopUpMessage' name="txtDeclinePopUpMessage" type="text" class="form-control clsForSummerNote" aria-required="true">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class='col-md-12 gap'>										
+											<div class='news'>
+												<div class='title'>																
+													<h5>Decline Confirmation Message</h5>
+												</div>
+												<div class="news-content">											
+													<div  class="form-group">													
+														<input id='txtDeclineCnfrmMessage' name="txtDeclineCnfrmMessage" type="text" class="form-control clsForSummerNote" aria-required="true">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class='col-md-12 gap'>										
+											<div class='news'>
+												<div class='title'>																
+													<h5>Application Confirmation Message</h5>
+												</div>
+												<div class="news-content">											
+													<div  class="form-group">													
+														<input id='txtApplicationMessage' name="txtApplicationMessage" type="text" class="form-control clsForSummerNote" aria-required="true">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class='clearfix row'>
+										<div class='col-md-12 '>										
+											<h4>Confirm Your Information</h4>
+											<div class='news'>
+												<div class='title'>																
+													<h5>Directions for Confirm Your Information</h5>
+												</div>
+												<div class="news-content">											
+													<div  class="form-group">													
+														<input id='txtConfirmInfo' name="txtConfirmInfo" type="text" class="form-control clsForSummerNote" aria-required="true">
+													</div>
+												</div>
+											</div>
+										</div>																													
+									</div>
+									<div class='clearfix row'>
+										<div class='col-md-12'>
+											<h4>Answer Questions</h4>										
+											<div class='news'>
+												<div class='title'>																
+													<h5>Directions for Questionnaire</h5>
+												</div>
+												<div class="news-content">											
+													<div  class="form-group">													
+														<input id='txtQuestionareOne' name="txtQuestionareOne" type="text" class="form-control clsForSummerNote" aria-required="true">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class='col-md-12 gap'>										
+											<div class='news'>
+												<div class='title'>																
+													<h5>Directions for Questionnaire 2</h5>
+												</div>
+												<div class="news-content">											
+													<div  class="form-group">													
+														<input id='txtQuestionareTwo' name="txtQuestionareTwo" type="text" class="form-control clsForSummerNote" aria-required="true">
+													</div>
+												</div>
+											</div>
+										</div>																				
+									</div>									
+									<div class='clearfix row'>
+										<div class='col-xs-12'>	
+											<h4>Finalize Your Application</h4>																	
+											<div class='news'>
+												<div class='title'>																
+													<h5>Final informative information before submissions</h5>
+												</div>
+												<div class="news-content">											
+													<div  class="form-group">													
+														<input id='txtFinalInfoBeforeSub' name="txtFinalInfoBeforeSub" type="text" class="form-control clsForSummerNote" aria-required="true">
+													</div>
+												</div>
+											</div>
+										</div>																																							
+									</div>
+									<div class='clearfix row'>
+										<div class='col-xs-12'>	
+											<h4>Footer</h4>																	
+											<div class='news'>
+												<div class='title'>																
+													<h5>Footer Text</h5>
+												</div>
+												<div class="news-content">											
+													<div  class="form-group">													
+														<input id='txtFooterText' name="txtFooterText" type="text" class="form-control clsForSummerNote" aria-required="true">
+													</div>
+												</div>
+											</div>
+										</div>																																							
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default" id="divForBankDraft">
+							<div class="panel-heading" role="tab" id="headingFour">
+								<h4 class="panel-title clearfix row">								
+									<span class='col-xs-10 headTxt'><i class="accordion_icon fa fa-th-large"></i> Bank Draft</span>
+									<span class='col-xs-2 nopad view'>
+									<!-- <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour"> -->
+									<button type="button" class='btn-default btn btn-sm pull-right' id="btnCollapseFour" onclick="hideShowBtnText('btnCollapseFour','collapseFour');">View</button></span>								
+								</h4>
+							</div>
+							<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+								<div class="panel-body clearfix">
+									<div class='row'>
+										<div class='col-md-6 toggleButton'>
+											<div class='news'>
+												<div class='title'>																		
+													<h5>Bank Draft Title</h5>
+												</div>
+												<div class="news-content">											
+													<div  class="form-group">												
+														<input id='txtBankDraftTitle' name="txtBankDraftTitle" type="text" class="form-control" aria-required="true">
+													</div>
+													<div class="form-group clearfix toggleGap">
+														<span class='col-sm-3 col-xs-7 nopad'>ACH Available</span>
+														<span class='col-sm-7 col-xs-5'><input type="checkbox" name="chkACHYesOrNo"  class="lcs_check lcs_tt2 clsOffCheckbox"  id='chkACHYesOrNo'/></span>            
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class='col-md-6'>
+											<div class='news'>
+												<div class='title'>																		
+													<h5>Bank Draft Page Instruction</h5>
+												</div>
+												<div class="news-content">											
+													<div  class="form-group">												
+														<input id='txtBankDraftInstruction' name="txtBankDraftInstruction" type="text" class="form-control clsForSummerNote" aria-required="true">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>								
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default" id="divForplanSetup">
+							<div class="panel-heading" role="tab" id="headingFive">
+								<h4 class="panel-title clearfix row">								
+									<span class='col-xs-10 headTxt'><i class="accordion_icon fa fa-th-large"></i> Plan Setup</span>
+									<span class='col-xs-2 nopad view'>
+									<!-- <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive"> -->
+									<button type="button" class='btn-default btn btn-sm pull-right' id="btnCollapseFive" onclick="hideShowBtnText('btnCollapseFive','collapseFive');">View</button></span>								
+								</h4>
+							</div>
+							<div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+								<div class="panel-body clearfix">
+									<div class='row clearfix'>
+										<div class='col-xs-12'>
+											<div class='news'>
+												<div class='title'>																		
+													<h5>Plan Information - Row</h5>
+												</div>
+												<table class="table table-striped table-bordered table-condensed" id='planInfoSetup'>
+													<thead>
+														<tr>
+															<th scope="col" class="width15" >Plan Fields</th>
+															<th scope="col" class="width35" >Label</th>
+															<th scope="col" class="width10" >Paid By</th>
+															<th scope="col" class="width30">Paid By Label</th>													
+															<th scope="col" class="width10" >Visibility</th>																				  
+														</tr>
+													</thead>
+													<tbody>
+														<tr >							
+															<td data-title="Attribute">Row Group 1 (Instruction)</td>
+															<td data-title="Label" class='suggestedQ'>
+																<div class="form-group">                                                
+																	<input id="txtRowGroupOneInstruction" name="userName" type="text" class="form-control" aria-required="true">
+																</div>
+															</td>
+															<td></td>
+															<td></td>
+															<td data-title="Visibility" class='text-center'><input type="checkbox" name="chkRowGroupOneVisibility" id="chkRowGroupOneVisibility"  class="lcs_check lcs_tt2 census clsOffCheckbox clsOffCheckbox" /></td>																					
+														</tr>
+														<tr >							
+															<td data-title="Attribute">Inforce GRP LTD</td>
+															<td data-title="Label" class='suggestedQ'>
+																<div class="form-group">                                                
+																	<input id="txtInforceGRPLTDLbl" name="txtInforceGRPLTDLbl" type="text" class="form-control" aria-required="true">
+																</div>
+															</td>
+															<td data-title="Paid By">
+																<div class="form-group">                                                
+																	<select class="form-control paidBy" id="cmbInforceGRPLTD">
+																		<option>Employee Paid</option>
+																		<option>Employer Paid</option>																		
+																	</select>																	
+																</div>
+															</td>
+															<td><input name="txtInforceGRPLTDlblPaidBy" type="text" class="form-control" aria-required="true" id="txtInforceGRPLTDlblPaidBy"></td>
+															<td data-title="Visibility" class='text-center'><input type="checkbox" name="chkInforceGRPLTD"  class="lcs_check lcs_tt2 census clsOffCheckbox clsOffCheckbox"  id="chkInforceGRPLTD"/></td>																					
+														</tr>
+														<tr >							
+															<td data-title="Attribute">Inforce Sponsor IDI Benefit</td>
+															<td data-title="Label" class='suggestedQ'>
+																<div class="form-group">                                                
+																	<input id="txtInforceSpnserTTDBen" name="txtInforceSpnserTTDBen" type="text" class="form-control" aria-required="true">
+																</div>
+															</td>
+															<td data-title="Paid By">
+																<div class="form-group">                                                
+																	<select class="form-control paidBy"  id="cmbInforceSpnserTTDBen">
+																		<option>Employee Paid</option>
+																		<option>Employer Paid</option>																		
+																	</select>
+																	
+																</div>
+															</td>
+															<td><input name="txtInforceSpnserTTDBenpaidby" id="txtInforceSpnserTTDBenpaidby" type="text" class="form-control" aria-required="true"></td>
+															<td data-title="Visibility" class='text-center'><input type="checkbox" name="chkInforceSpnserTTDBen"  class="lcs_check lcs_tt2 census clsOffCheckbox clsOffCheckbox"  id="chkInforceSpnserTTDBen"/></td>																					
+														</tr>
+														<tr >							
+															<td data-title="Attribute">Inforce IDI 2 Benefit</td>
+															<td data-title="Label" class='suggestedQ'>
+																<div class="form-group">                                                
+																	<input id="txtInforceIdiTwoBen" name="txtInforceIdiTwoBen" type="text" class="form-control" aria-required="true">
+																</div>
+															</td>
+															<td data-title="Paid By">
+																<div class="form-group">                                                
+																	<select class="form-control paidBy"  id="cmbInforceIdiTwoBen">
+																		<option>Employee Paid</option>
+																		<option>Employer Paid</option>																		
+																	</select>
+																	
+																</div>
+															</td>
+															<td><input name="txtInforceIdiTwoBenpaidby" id="txtInforceIdiTwoBenpaidby" type="text" class="form-control" aria-required="true"></td>
+															<td data-title="Visibility" class='text-center'><input type="checkbox" name="chkInforceIdiTwo"  class="lcs_check lcs_tt2 census clsOffCheckbox clsOffCheckbox"  id="chkInforceIdiTwoBen"/></td>																					
+														</tr>
+														<tr >							
+															<td data-title="Attribute">Other Inforce Benefit</td>
+															<td data-title="Label" class='suggestedQ'>
+																<div class="form-group">                                                
+																	<input id="txtOthrInforceBen" name="txtOthrInforceBen" type="text" class="form-control" aria-required="true">
+																</div>
+															</td>
+															<td data-title="Paid By">
+																<div class="form-group">                                                
+																	<select class="form-control paidBy"  id="cmbOthrInforceBen">
+																		<option>Employee Paid</option>
+																		<option>Employer Paid</option>																		
+																	</select>
+																	
+																</div>
+															</td>
+															<td><input name="txtOthrInforceBenpaidby" id="txtOthrInforceBenpaidby" type="text" class="form-control" aria-required="true"></td>
+															<td data-title="Visibility" class='text-center'><input type="checkbox" name="chkInforceIdiTwo"  class="lcs_check lcs_tt2 census clsOffCheckbox clsOffCheckbox"  id="chkOthrInforceBen"/></td>																					
+														</tr>
+														<tr >							
+															<td data-title="Attribute">IDI Benefit Increase</td>
+															<td data-title="Label" class='suggestedQ'>
+																<div class="form-group">                                                
+																	<input id="txtIdiBenefitIncrse" name="txtIdiBenefitIncrse" type="text" class="form-control" aria-required="true">
+																</div>
+															</td>
+															<td data-title="Paid By">
+																<div class="form-group">                                                
+																	<select class="form-control paidBy"  id="cmbIdiBenefitIncrse">
+																		<option>Employee Paid</option>
+																		<option>Employer Paid</option>																		
+																	</select>
+																	
+																</div>
+															</td>
+															<td><input name="txtIdiBenefitIncrsepaidby" id="txtIdiBenefitIncrsepaidby" type="text" class="form-control" aria-required="true"></td>
+															<td data-title="Visibility" class='text-center'><input type="checkbox" name="chkIdiBenefitIncrse"  class="lcs_check lcs_tt2 census clsOffCheckbox clsOffCheckbox"  id="chkIdiBenefitIncrse"/></td>																					
+														</tr>
+														
+														
+														<tr >							
+															<td data-title="Attribute">Row Group 2(Instruction)</td>
+															<td data-title="Label" class='suggestedQ'>
+																<div class="form-group">                                                
+																	<input id="txtRowGrpTwoInstruction" name="txtRowGrpTwoInstruction" type="text" class="form-control" aria-required="true">
+																</div>
+															</td>
+															<td></td>
+															<td></td>
+															<td data-title="Visibility" class='text-center'><input type="checkbox" name="chkRowGrpTwoInstruction" id="chkRowGrpTwoInstruction"  class="lcs_check lcs_tt2 census clsOffCheckbox clsOffCheckbox" /></td>																					
+														</tr>
+														<tr >							
+															<td data-title="Attribute">IDI Benefit Mandatory</td>
+															<td data-title="Label" class='suggestedQ'>
+																<div class="form-group">                                                
+																	<input id="txtIdiBenMandatory" name="txtIdiBenMandatory" type="text" class="form-control" aria-required="true">
+																</div>
+															</td>
+															<td data-title="Paid By">
+																<div class="form-group" id="cmbIdiBenMandatory">                                                
+																	<select class="form-control paidBy">
+																		<option>Employee Paid</option>
+																		<option>Employer Paid</option>																		
+																	</select>																	
+																</div>
+															</td>
+															<td><input name="txtIdiBenMandatoryPaidBy" type="text" class="form-control" aria-required="true" id="IdiBenMandatoryPaidBy"></td>
+															<td data-title="Visibility" class='text-center'><input type="checkbox" name="chkIdiBenMandatory" id="chkIdiBenMandatory" class="lcs_check lcs_tt2 census clsOffCheckbox " /></td>																					
+														</tr>
+														<tr >							
+															<td data-title="Attribute">IDI Benefit 1</td>
+															<td data-title="Label" class='suggestedQ'>
+																<div class="form-group">                                                
+																	<input id="txtIdiBenOne" name="txtIdiBenOne" type="text" class="form-control" aria-required="true">
+																</div>
+															</td>
+															<td data-title="Paid By">
+																<div class="form-group" id="cmbIdiBenOne">                                                
+																	<select class="form-control paidBy">
+																		<option>Employee Paid</option>
+																		<option>Employer Paid</option>																		
+																	</select>																	
+																</div>
+															</td>
+															<td><input name="txtIdiBenOnePaidBy" type="text" class="form-control" aria-required="true" id="txtIdiBenOnePaidBy"></td>
+															<td data-title="Visibility" class='text-center'><input type="checkbox" name="chkIdiBenOne" id="chkIdiBenOne" class="lcs_check lcs_tt2 census clsOffCheckbox " /></td>																					
+														</tr>
+														<tr >							
+															<td data-title="Attribute">IDI Benefit 2</td>
+															<td data-title="Label" class='suggestedQ'>
+																<div class="form-group">                                                
+																	<input id="txtIdiBenTwo" name="txtIdiBenTwo" type="text" class="form-control" aria-required="true">
+																</div>
+															</td>
+															<td data-title="Paid By">
+																<div class="form-group" id="cmbIdiBenTwo">                                                
+																	<select class="form-control paidBy">
+																		<option>Employee Paid</option>
+																		<option>Employer Paid</option>																		
+																	</select>																	
+																</div>
+															</td>
+															<td><input name="txtIdiBenTwoPaidBy" type="text" class="form-control" aria-required="true" id="txtIdiBenTwoPaidBy"></td>
+															<td data-title="Visibility" class='text-center'><input type="checkbox" name="chkIdiBenTwo" id="chkIdiBenTwo" class="lcs_check lcs_tt2 census clsOffCheckbox " /></td>																					
+														</tr>
+														<tr >							
+															<td data-title="Attribute">IDI Benefit 2</td>
+															<td data-title="Label" class='suggestedQ'>
+																<div class="form-group">                                                
+																	<input id="txtIdiBenThree" name="txtIdiBenThree" type="text" class="form-control" aria-required="true">
+																</div>
+															</td>
+															<td data-title="Paid By">
+																<div class="form-group" id="cmbIdiBenThree">                                                
+																	<select class="form-control paidBy">
+																		<option>Employee Paid</option>
+																		<option>Employer Paid</option>																		
+																	</select>																	
+																</div>
+															</td>
+															<td><input name="txtIdiBenThreePaidBy" type="text" class="form-control" aria-required="true" id="txtIdiBenThreePaidBy"></td>
+															<td data-title="Visibility" class='text-center'><input type="checkbox" name="chkIdiBenThree" id="chkIdiBenThree" class="lcs_check lcs_tt2 census clsOffCheckbox " /></td>																					
+														</tr>
+														<tr >							
+															<td data-title="Attribute">Row Group 3(Instruction)</td>
+															<td data-title="Label" class='suggestedQ'>
+																<div class="form-group">                                                
+																	<input id="txtRowGrpThreeInstru" name="txtRowGrpThreeInstru" type="text" class="form-control" aria-required="true">
+																</div>
+															</td>
+															<td></td>
+															<td></td>
+															<td data-title="Visibility" class='text-center'><input type="checkbox" name="chkRowGrpThreeInstru" id="chkRowGrpThreeInstru" class="lcs_check lcs_tt2 census clsOffCheckbox" /></td>																					
+														</tr>
+														<tr >							
+															<td data-title="Attribute">Lloyd's Benefit - Option 1</td>
+															<td data-title="Label" class='suggestedQ'>
+																<div class="form-group">                                                
+																	<input id="txtLydsBenOpt1" name="txtLydsBenOpt1" type="text" class="form-control" aria-required="true">
+																</div>
+															</td>
+															<td data-title="Paid By">
+																<div class="form-group">                                                
+																	<select class="form-control paidBy" id="cmbLydsBenOpt1">
+																		<option>Employee Paid</option>
+																		<option>Employer Paid</option>																		
+																	</select>																	
+																</div>
+															</td>
+															<td><input name="txtLydsBenOpt1PaidBy" type="text" class="form-control" aria-required="true" id="txtLydsBenOpt1PaidBy"></td>
+															<td data-title="Visibility" class='text-center'><input type="checkbox" name="chkLydsBenOpt1" id="chkLydsBenOpt1" class="lcs_check lcs_tt2 census clsOffCheckbox" /></td>																					
+														</tr>
+														<tr >							
+															<td data-title="Attribute">Lloyd's Benefit - Option 2</td>
+															<td data-title="Label" class='suggestedQ'>
+																<div class="form-group">                                                
+																	<input id="txtLydsBenOpt2" name="txtLydsBenOpt2" type="text" class="form-control" aria-required="true">
+																</div>
+															</td>
+															<td data-title="Paid By">
+																<div class="form-group">                                                
+																	<select class="form-control paidBy" id="cmbLydsBenOpt2">
+																		<option>Employee Paid</option>
+																		<option>Employer Paid</option>																		
+																	</select>																	
+																</div>
+															</td>
+															<td><input name="userName" type="text" class="form-control" aria-required="true" id="txtLydsBenOpt2PaidBy"></td>
+															<td data-title="Visibility" class='text-center'><input type="checkbox" name="chkLydsBenOpt2"  class="lcs_check lcs_tt2 census clsOffCheckbox"  id="chkLydsBenOpt2"/></td>																					
+														</tr>
+														<tr >							
+															<td data-title="Attribute">Lloyd's Benefit - Option 3</td>
+															<td data-title="Label" class='suggestedQ'>
+																<div class="form-group">                                                
+																	<input id="txtLydsBenOpt3" name="txtLydsBenOpt3" type="text" class="form-control" aria-required="true">
+																</div>
+															</td>
+															<td data-title="Paid By">
+																<div class="form-group">                                                
+																	<select class="form-control paidBy" id="cmbLydsBenOpt3">
+																		<option>Employee Paid</option>
+																		<option>Employer Paid</option>																		
+																	</select>																	
+																</div>
+															</td>
+															<td><input name="txtLydsBenOpt3Paidby" type="text" class="form-control" aria-required="true" id="txtLydsBenOpt3Paidby"></td>
+															<td data-title="Visibility" class='text-center'><input type="checkbox" name="chkLydsBenOpt3"  class="lcs_check lcs_tt2 census clsOffCheckbox"  id="chkLydsBenOpt3"/></td>																					
+														</tr>
+														<tr >							
+															<td data-title="Attribute">Lloyd's Benefit - Option 4</td>
+															<td data-title="Label" class='suggestedQ'>
+																<div class="form-group">                                                
+																	<input id="txtLydsBenOpt4" name="txtLydsBenOpt4" type="text" class="form-control" aria-required="true">
+																</div>
+															</td>
+															<td data-title="Paid By">
+																<div class="form-group">                                                
+																	<select class="form-control paidBy" id="cmbLydsBenOpt4">
+																		<option>Employee Paid</option>
+																		<option>Employer Paid</option>																		
+																	</select>																	
+																</div>
+															</td>
+															<td><input name="txtLydsBenOpt4paidby" type="text" class="form-control" aria-required="true" id="txtLydsBenOpt4paidby"></td>
+															<td data-title="Visibility" class='text-center'><input type="checkbox" name="chkLydsBenOpt4" id="chkLydsBenOpt4" class="lcs_check lcs_tt2 census clsOffCheckbox" /></td>																					
+														</tr>
+														<tr >							
+															<td data-title="Attribute">Lloyd's Benefit - Option 5</td>
+															<td data-title="Label" class='suggestedQ'>
+																<div class="form-group">                                                
+																	<input id="txtLydsBenOpt5" name="txtLydsBenOpt5" type="text" class="form-control" aria-required="true">
+																</div>
+															</td>
+															<td data-title="Paid By">
+																<div class="form-group">                                                
+																	<select class="form-control paidBy" id="cmbLydsBenOpt5">
+																		<option>Employee Paid</option>
+																		<option>Employer Paid</option>																		
+																	</select>																	
+																</div>
+															</td>
+															<td><input name="txtLydsBenOpt5Paidby" type="text" class="form-control" aria-required="true" id="txtLydsBenOpt5Paidby"></td>
+															<td data-title="Visibility" class='text-center'><input type="checkbox" name="chkLydsBenOpt5" id="chkLydsBenOpt5"  class="lcs_check lcs_tt2 census clsOffCheckbox" /></td>																					
+														</tr>
+														<tr >							
+															<td data-title="Attribute">Lloyd's Benefit - Option 6</td>
+															<td data-title="Label" class='suggestedQ'>
+																<div class="form-group">                                                
+																	<input id="txtLydsBenOpt6" name="txtLydsBenOpt6" type="text" class="form-control" aria-required="true">
+																</div>
+															</td>
+															<td data-title="Paid By">
+																<div class="form-group">                                                
+																	<select class="form-control paidBy" id="cmbLydsBenOpt6">
+																		<option>Employee Paid</option>
+																		<option>Employer Paid</option>																		
+																	</select>																	
+																</div>
+															</td>
+															<td><input name="txtLydsBenOpt6PaidBy" id="txtLydsBenOpt6PaidBy" type="text" class="form-control" aria-required="true"></td>
+															<td data-title="Visibility" class='text-center'><input type="checkbox" name="chkLydsBenOpt6"  class="lcs_check lcs_tt2 census clsOffCheckbox"  id="chkLydsBenOpt6"/></td>																					
+														</tr>
+														<tr >							
+															<td data-title="Attribute">Custom TTD</td>
+															<td data-title="Label" class='suggestedQ'>
+																<div class="form-group">                                                
+																	<input id="txtCustomTTd" name="txtCustomTTd" type="text" class="form-control" aria-required="true">
+																</div>
+															</td>
+															<td data-title="Paid By">
+																<div class="form-group">                                                
+																	<select class="form-control paidBy" id="cmbCustomTTd">
+																		<option>Employee Paid</option>
+																		<option>Employer Paid</option>																		
+																	</select>																	
+																</div>
+															</td>
+															<td><input name="txtCustomTTdPaidBy" id="txtCustomTTdPaidBy" type="text" class="form-control" aria-required="true"></td>
+															<td data-title="Visibility" class='text-center'><input type="checkbox" name="chkCustomTTd"  class="lcs_check lcs_tt2 census clsOffCheckbox"  id="chkCustomTTd"/></td>																					
+														</tr>																										
+													</tbody>
+												</table>
+											</div>
+											<div class='news cola'>
+												<div class='title'>																		
+													<h5>Plan Information - Column</h5>
+												</div>
+												<table class="table table-striped table-bordered table-condensed">
+													<thead>
+														<tr>
+															<th scope="col" class="width15" >Plan Fields</th>
+															<th scope="col" class="width75" >Label</th>																
+															<th scope="col" class="width10" >Visibility</th>													  
+														</tr>
+													</thead>
+													<tbody>
+														<tr >							
+															<td data-title="Attribute">Monthly Benefit</td>
+															<td data-title="Instruction" class='suggestedI'>
+																<div class="form-group">                                                
+																	<input name="txtMnthlyBen" id="txtMnthlyBen" type="text" class="form-control" aria-required="true">
+																</div>
+															</td>															
+															<td data-title="Visibility" class='text-center'><input type="checkbox" name="chkMnthlyBen" id="chkMnthlyBen"  class="lcs_check lcs_tt2 census clsOffCheckbox" /></td>																							
+														</tr>
+														<tr >							
+															<td data-title="Attribute">Lump Sum Benefit</td>
+															<td data-title="Instruction" class='suggestedI'>
+																<div class="form-group">                                                
+																	<input name="txtLumpSumBen" id="txtLumpSumBen" type="text" class="form-control" aria-required="true">
+																</div>
+															</td>															
+															<td data-title="Visibility" class='text-center'><input type="checkbox" name="chkLumpSumBen" id="chkLumpSumBen" class="lcs_check lcs_tt2 census clsOffCheckbox" /></td>																							
+														</tr>
+														<tr >							
+															<td data-title="Attribute">Premium</td>
+															<td data-title="Instruction" class='suggestedI'>
+																<div class="form-group">                                                
+																	<input name="txtPremium" id="txtPremium" type="text" class="form-control" aria-required="true">
+																</div>
+															</td>															
+															<td data-title="Visibility" class='text-center'><input type="checkbox" name="chkPremium" id="chkPremium" class="lcs_check lcs_tt2 census clsOffCheckbox" /></td>																							
+														</tr>
+														<tr >							
+															<td data-title="Attribute">Replacement of Monthly Income</td>
+															<td data-title="Instruction" class='suggestedI'>
+																<div class="form-group">                                                
+																	<input name="txtRepOfMnthlyIcm" id="txtRepOfMnthlyIcm" type="text" class="form-control" aria-required="true">
+																</div>
+															</td>															
+															<td data-title="Visibility" class='text-center'><input type="checkbox" name="chkRepOfMnthlyIcm" id="chkRepOfMnthlyIcm" class="lcs_check lcs_tt2 census clsOffCheckbox" /></td>																							
+														</tr>
+													</tbody>
+												</table>
+											</div>
+											<div class='news cola'>
+												<div class='title'>																		
+													<h5>COLA & Tobacco</h5>
+												</div>
+												<table class="table table-striped table-bordered table-condensed">
+													<thead>
+														<tr>
+															<th scope="col" class="width15">Attribute</th>																						
+															<th scope="col" class="width75">Label</th>
+															<th scope="col" class="width10"  >Visibility</th>							  
+														</tr>
+													</thead>
+													<tbody>
+														<tr >							
+															<td data-title="Attribute">COLA</td>									
+															<td data-title="Instruction" class='suggestedI'>
+																<div class="form-group">                                                
+																	<textarea name="txtCOLA" id="txtCOLA"  class="form-control" aria-required="true"></textarea>
+																</div>
+															</td>
+															<td data-title="Visibility" class='text-center'><input type="checkbox" name="chkCola" id="chkCola"  class="lcs_check lcs_tt2 census clsOffCheckbox" /></td>								
+														</tr>
+														<tr >							
+															<td data-title="Attribute">Tobacco</td>																												
+															<td data-title="Instruction" class='suggestedI'>
+																<div class="form-group">                                                
+																	<textarea name="txttobacco" id="txttobacco"  class="form-control" aria-required="true"></textarea>
+																</div>
+															</td>
+															<td data-title="Visibility" class='text-center'><input type="checkbox" name="chkTobacco" id="chkTobacco" class="lcs_check lcs_tt2 census clsOffCheckbox" /></td>								
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>										
+									</div>								
+								</div>
+							</div>
+						</div>
+					</div>					
+					<button class="btn btn-primary btn-lg back floatLeft" onclick="redirecttoScreen('enrollmentDtls');"><i class='fa fa-hand-o-left' aria-hidden="true"></i>Back</button>
+					<button class="btn btn-primary btn-lg pull-right step float" onclick="saveSetupInstruction();">Proceed<i class='fa fa-hand-o-right' aria-hidden="true"></i></button>
+				</div>	
+				
+					</html>

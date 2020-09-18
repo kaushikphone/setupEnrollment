@@ -1,0 +1,1891 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+   <title>Setup Enrollment</title>
+</head>
+<div id='divForCensusScreen' class="tabcontent ">
+					<div class="panel panel-default">
+						<div class="panel-heading title"  >
+							<h3 class="panel-title">								
+								Confirm Census Info										 								
+							</h3>
+						</div>
+					</div>	
+					<table class="table table-striped table-bordered table-condensed">
+						<thead>
+							<tr>
+								<th scope="col" class="width20">Attribute</th>
+								<th scope="col" class="width8">Read-only</th>
+								<th scope="col" class="width8">Visibility</th>
+								<th scope="col" class="width8">Mandatory</th>
+								<th scope="col" class="width20">Label</th>
+								<th scope="col" class="width38">Instruction</th>							  
+							</tr>
+						</thead>
+						<tbody>
+							<tr>						
+								<td data-title="Attribute">First Name</td>
+								<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyFirstName" id="chkReadOnlyFirstName"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Visibility"><input type="checkbox" name="chkVisibilityFirstName" id="chkVisibilityFirstName"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryFirstName" id="chkMandatoryFirstName"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Label" class='suggestedQ'>
+									<div class="form-group">                                                
+										<input  name="txtLblfirstname" id="txtLblfirstname" type="text" class="form-control" >
+									</div>
+								</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+										<textarea name="txtInstuctionFirstName" id="txtInstuctionFirstName"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>
+							<tr>						
+								<td data-title="Attribute">Last Name</td>
+								<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyLastName" id="chkReadOnlyLastName"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Visibility"><input type="checkbox" name="chkVisibilityLastName" id="chkVisibilityLastName"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryLastName" id="chkMandatoryLastName"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Label" class='suggestedQ'>
+									<div class="form-group">                                                
+										<input  name="txtLblLastname" id="txtLblLastname" type="text" class="form-control" >
+									</div>
+								</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+										<textarea name="txtInstuctionLastName" id="txtInstuctionLastName"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>
+							<tr>						
+								<td data-title="Attribute">Employee Id</td>
+								<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyEmpId" id="chkReadOnlyEmpId"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Visibility"><input type="checkbox" name="chkVisibilityEmpId" id="chkVisibilityEmpId"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryEmpId" id="chkMandatoryEmpId"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Label" class='suggestedQ'>
+									<div class="form-group">                                                
+										<input  name="txtLblEmpId" id="txtLblEmpId" type="text" class="form-control" >
+									</div>
+								</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+										<textarea name="txtInstuctionEmpId" id="txtInstuctionEmpId"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>
+							<tr>						
+								<td data-title="Attribute">SSN</td>
+								<td data-title="Read-only"><input type="checkbox" name="chkReadOnlySsn" id="chkReadOnlySsn"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Visibility"><input type="checkbox" name="chkVisibilitySsn" id="chkVisibilitySsn"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Mandatory"><input type="checkbox" name="chkMandatorySsn" id="chkMandatorySsn"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Label" class='suggestedQ'>
+									<div class="form-group">                                                
+										<input  name="txtLblSsn" id="txtLblSsn" type="text" class="form-control" >
+									</div>
+								</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+										<textarea name="txtInstuctionSsn" id="txtInstuctionSsn"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>
+							<tr>						
+								<td data-title="Attribute">Unique Id</td>
+								<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyUniqueId" id="chkReadOnlyUniqueId"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Visibility"><input type="checkbox" name="chkVisibilityUniqueId" id="chkVisibilityUniqueId"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryUniqueId" id="chkMandatoryUniqueId"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Label" class='suggestedQ'>
+									<div class="form-group">                                                
+										<input  name="txtLblUniqueId" id="txtLblUniqueId" type="text" class="form-control" >
+									</div>
+								</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+										<textarea name="txtInstuctionUniqueId" id="txtInstuctionUniqueId"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>
+							<tr>						
+								<td data-title="Attribute">DOB</td>
+								<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyDOB" id="chkReadOnlyDOB"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Visibility"><input type="checkbox" name="chkVisibilityDOB" id="chkVisibilityDOB"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryDOB" id="chkMandatoryDOB"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Label" class='suggestedQ'>
+									<div class="form-group">                                                
+										<input  name="txtLblDOB" id="txtLblDOB" type="text" class="form-control" >
+									</div>
+								</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+										<textarea name="txtInstuctionDOB" id="txtInstuctionDOB"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>
+							<tr>						
+								<td data-title="Attribute">Work Email</td>
+								<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyWorkEmail" id="chkReadOnlyWorkEmail"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Visibility"><input type="checkbox" name="chkVisibilityWorkEmail" id="chkVisibilityWorkEmail"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryWorkEmail" id="chkMandatoryWorkEmail"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Label" class='suggestedQ'>
+									<div class="form-group">                                                
+										<input  name="txtLblWorkEmail" id="txtLblWorkEmail" type="text" class="form-control" >
+									</div>
+								</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+										<textarea name="txtInstuctionWorkEmail" id="txtInstuctionWorkEmail"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>
+							<tr>						
+								<td data-title="Attribute">Personal Email</td>
+								<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyPrsnlEmail" id="chkReadOnlyPrsnlEmail"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Visibility"><input type="checkbox" name="chkVisibilityPrsnlEmail" id="chkVisibilityPrsnlEmail"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryPrsnlEmail" id="chkMandatoryPrsnlEmail"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Label" class='suggestedQ'>
+									<div class="form-group">                                                
+										<input  name="txtLblPrsnlEmail" id="txtLblPrsnlEmail" type="text" class="form-control" >
+									</div>
+								</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+										<textarea name="txtInstuctionPrsnlEmail" id="txtInstuctionPrsnlEmail"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>
+												
+								<tr>						
+								<td data-title="Attribute">Date Of Hire</td>
+								<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyDOH" id="chkReadOnlyDOH"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Visibility"><input type="checkbox" name="chkVisibilityDOH" id="chkVisibilityDOH"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryDOH" id="chkMandatoryDOH"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Label" class='suggestedQ'>
+									<div class="form-group">                                                
+										<input  name="txtLblDOH" id="txtLblDOH" type="text" class="form-control" >
+									</div>
+								</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+										<textarea name="txtInstuctionDOH" id="txtInstuctioDOH"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>
+								
+							<tr>						
+								<td data-title="Attribute">Gender</td>
+								<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyGender" id="chkReadOnlyGender"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Visibility"><input type="checkbox" name="chkVisibilityGender" id="chkVisibilityGender"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryGender" id="chkMandatoryGender"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Label" class='suggestedQ'>
+									<div class="form-group">                                                
+										<input  name="txtLblGender" id="txtLblGender" type="text" class="form-control" >
+									</div>
+								</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+										<textarea name="txtInstuctionGender" id="txtInstuctioGender"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>
+							<tr>						
+								<td data-title="Attribute">Employer</td>
+								<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyEmployer" id="chkReadOnlyEmployer"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Visibility"><input type="checkbox" name="chkVisibilityEmployer" id="chkVisibilityEmployer"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryEmployer" id="chkMandatoryEmployer"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Label" class='suggestedQ'>
+									<div class="form-group">                                                
+										<input  name="txtLblEmployer" id="txtLblEmployer" type="text" class="form-control" >
+									</div>
+								</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+										<textarea name="txtInstuctionEmployer" id="txtInstuctioEmployer"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>
+							<tr>						
+								<td data-title="Attribute">Business Address</td>
+								<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyBsnsAdd" id="chkReadOnlyBsnsAdd"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Visibility"><input type="checkbox" name="chkVisibilityBsnsAdd" id="chkVisibilityBsnsAdd"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryBsnsAdd" id="chkMandatoryBsnsAdd"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Label" class='suggestedQ'>
+									<div class="form-group">                                                
+										<input  name="txtLblBsnsAdd" id="txtLblBsnsAdd" type="text" class="form-control" >
+									</div>
+								</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+										<textarea name="txtInstuctionBsnsAdd" id="txtInstuctioBsnsAdd"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>
+							<tr>						
+								<td data-title="Attribute">Business City</td>
+								<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyBsnsCity" id="chkReadOnlyBsnsCity"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Visibility"><input type="checkbox" name="chkVisibilityBsnsCity" id="chkVisibilityBsnsCity"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryBsnsCity" id="chkMandatoryBsnsCity"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Label" class='suggestedQ'>
+									<div class="form-group">                                                
+										<input  name="txtLblBsnsCity" id="txtLblBsnsCity" type="text" class="form-control" >
+									</div>
+								</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+										<textarea name="txtInstuctionBsnsCity" id="txtInstuctioBsnsCity"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>
+							<tr>						
+								<td data-title="Attribute">Business State</td>
+								<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyBsnsState" id="chkReadOnlyBsnsState"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Visibility"><input type="checkbox" name="chkVisibilityBsnsState" id="chkVisibilityBsnsState"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryBBsnsState" id="chkMandatoryBsnsState"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Label" class='suggestedQ'>
+									<div class="form-group">                                                
+										<input  name="txtLblBsnsState" id="txtLblBsnsState" type="text" class="form-control" >
+									</div>
+								</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+										<textarea name="txtInstuctionBsnsState" id="txtInstuctioBsnsState"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>
+							<tr>						
+								<td data-title="Attribute">Business Zip</td>
+								<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyBsnsZip" id="chkReadOnlyBsnsZip"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Visibility"><input type="checkbox" name="chkVisibilityBsnsZip" id="chkVisibilityBsnsZip"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryBsnsZip" id="chkMandatoryBsnsZip"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Label" class='suggestedQ'>
+									<div class="form-group">                                                
+										<input  name="txtLblBsnsZip" id="txtLblBsnsZip" type="text" class="form-control" >
+									</div>
+								</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+										<textarea name="txtInstuctionBsnsZip" id="txtInstuctioBsnsZip"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>
+							<tr>						
+								<td data-title="Attribute">Business Country</td>
+								<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyBsnsCntry" id="chkReadOnlyBsnsCntry"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Visibility"><input type="checkbox" name="chkVisibilityBsnsCntry" id="chkVisibilityBsnsCntry"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryBsnsCntry" id="chkMandatoryBsnsCntry"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Label" class='suggestedQ'>
+									<div class="form-group">                                                
+										<input  name="txtLblBsnsCntry" id="txtLblBsnsCntry" type="text" class="form-control" >
+									</div>
+								</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+										<textarea name="txtInstuctionBsnsCntry" id="txtInstuctioBsnsCntry"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>
+							<tr>						
+								<td data-title="Attribute">Business Phone</td>
+								<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyBsnsPhn" id="chkReadOnlyBsnsPhn"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Visibility"><input type="checkbox" name="chkVisibilityBsnsPhn" id="chkVisibilityBsnsPhn"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryBsnsPhn" id="chkMandatoryBsnsPhn"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Label" class='suggestedQ'>
+									<div class="form-group">                                                
+										<input  name="txtLblBsnsPhn" id="txtLblBsnsPhn" type="text" class="form-control" >
+									</div>
+								</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+										<textarea name="txtInstuctionBsnsPhn" id="txtInstuctioBsnsPhn"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>
+							<tr>						
+								<td data-title="Attribute">Salary</td>
+								<td data-title="Read-only"><input type="checkbox" name="chkReadOnlySalary" id="chkReadOnlySalary"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Visibility"><input type="checkbox" name="chkVisibilitySalary" id="chkVisibilitySalary"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Mandatory"><input type="checkbox" name="chkMandatorySalary" id="chkMandatorySalary"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Label" class='suggestedQ'>
+									<div class="form-group">                                                
+										<input  name="txtLblSalary" id="txtLblSalary" type="text" class="form-control" >
+									</div>
+								</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+										<textarea name="txtInstuctionSalary" id="txtInstuctioSalary"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>
+							<tr>						
+								<td data-title="Attribute">Commission</td>
+								<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyCommsn" id="chkReadOnlyCommsn"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Visibility"><input type="checkbox" name="chkVisibilityCommsn" id="chkVisibilityCommsn"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryCommsn" id="chkMandatoryCommsn"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Label" class='suggestedQ'>
+									<div class="form-group">                                                
+										<input  name="txtLblCommsn" id="txtLblCommsn" type="text" class="form-control" >
+									</div>
+								</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+										<textarea name="txtInstuctionCommsn" id="txtInstuctioCommsn"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>
+							<tr>						
+								<td data-title="Attribute">Last Paid Bonus</td>
+								<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyLastPBonus" id="chkReadOnlyLastPBonus"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Visibility"><input type="checkbox" name="chkVisibilityLastPBonus" id="chkVisibilityLastPBonus"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryLastPBonus" id="chkMandatoryLastPBonus"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Label" class='suggestedQ'>
+									<div class="form-group">                                                
+										<input  name="txtLblLastPBonus" id="txtLblLastPBonus" type="text" class="form-control" >
+									</div>
+								</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+										<textarea name="txtInstuctionLastPBonus" id="txtInstuctioLastPBonus"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>
+							<tr>						
+								<td data-title="Attribute">Prior Year Bonus</td>
+								<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyPriorYBonus" id="chkReadOnlyPriorYBonus"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Visibility"><input type="checkbox" name="chkVisibilityPriorYBonus" id="chkVisibilityPriorYBonus"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryPriorYBonus" id="chkMandatoryPriorYBonus"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Label" class='suggestedQ'>
+									<div class="form-group">                                                
+										<input  name="txtLblPriorYBonus" id="txtLblPriorYBonus" type="text" class="form-control" >
+									</div>
+								</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+										<textarea name="txtInstuctionPriorYBonus" id="txtInstuctioPriorYBonus"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>
+							<tr>						
+								<td data-title="Attribute">Average of Bonus</td>
+								<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyAvgOfBonus" id="chkReadOnlyAvgOfBonus"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Visibility"><input type="checkbox" name="chkVisibilityAvgOfBonus" id="chkVisibilityAvgOfBonus"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryAvgOfBonus" id="chkMandatoryAvgOfBonus"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Label" class='suggestedQ'>
+									<div class="form-group">                                                
+										<input  name="txtLblAvgOfBonus" id="txtLblAvgOfBonus" type="text" class="form-control" >
+									</div>
+								</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+										<textarea name="txtInstuctionAvgOfBonus" id="txtInstuctioAvgOfBonus"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>
+							<tr>						
+								<td data-title="Attribute">Total Compensation</td>
+								<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTotalComp" id="chkReadOnlyTotalComp"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTotalComp" id="chkVisibilityTotalComp"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTotalComp" id="chkMandatoryTotalComp"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Label" class='suggestedQ'>
+									<div class="form-group">                                                
+										<input  name="txtLblTotalComp" id="txtLblTotalComp" type="text" class="form-control" >
+									</div>
+								</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+										<textarea name="txtInstuctionTotalComp" id="txtInstuctioTotalComp"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>
+							<tr>						
+								<td data-title="Attribute">Occupation</td>
+								<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyOccupation" id="chkReadOnlyOccupation"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Visibility"><input type="checkbox" name="chkVisibilityOccupation" id="chkVisibilityOccupation"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryOccupation" id="chkMandatoryOccupation"  class="lcs_check lcs_tt2 census" /></td>
+								<td data-title="Label" class='suggestedQ'>
+									<div class="form-group">                                                
+										<input  name="txtLblOccupation" id="txtLblOccupation" type="text" class="form-control" >
+									</div>
+								</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+										<textarea name="txtInstuctionOccupation" id="txtInstuctioOccupation"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>
+							<tr>						
+							<td data-title="Attribute">Occupation Text</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyOccupationText" id="chkReadOnlyOccupationText"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityOccupationText" id="chkVisibilityOccupationText"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryOccupationText" id="chkMandatoryOccupationText"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblOccupation" id="txtLblOccupationText" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionOccupationText" id="txtInstuctioOccupationText"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>
+							<tr>						
+							<td data-title="Attribute">Duties</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyDuties" id="chkReadOnlyDuties"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityDuties" id="chkVisibilityDuties"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryDuties" id="chkMandatoryDuties"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblDuties" id="txtLblDuties" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionDuties" id="txtInstuctioDuties"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>
+							<tr>						
+							<td data-title="Attribute">Insured Address</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyInsAdd" id="chkReadOnlyInsAdd"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityInsAdd" id="chkVisibilityInsAdd"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryInsAdd" id="chkMandatoryInsAdd"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblInsAdd" id="txtLblInsAdd" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionInsAdd" id="txtInstuctioInsAdd"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>
+							<tr>						
+							<td data-title="Attribute">Insured City</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyInsCity" id="chkReadOnlyInsCity"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityInsCity" id="chkVisibilityInsCity"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryInsCity" id="chkMandatoryInsCity"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblInsCity" id="txtLblInsCity" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionInsCity" id="txtInstuctioInsCity"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>
+							<tr>						
+							<td data-title="Attribute">Insured Home State</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyInsHstate" id="chkReadOnlyInsHstate"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityInsHstate" id="chkVisibilityInsHstate"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryInsHstate" id="chkMandatoryInsHstate"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblInsHstate" id="txtLblInsHstate" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionInsHstate" id="txtInstuctioInsHstate"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>
+							<tr>						
+							<td data-title="Attribute">Insured Situs State</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyInsSstate" id="chkReadOnlyInsSstate"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityInsSstate" id="chkVisibilityInsSstate"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryInsSstate" id="chkMandatoryInsSstate"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblInsSstate" id="txtLblInsSstate" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionInsSstate" id="txtInstuctioInsSstate"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>
+							<tr>						
+							<td data-title="Attribute">Insured Zip</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyInsZip" id="chkReadOnlyInsZip"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityInsZip" id="chkVisibilityInsZip"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryInsZip" id="chkMandatoryInsZip"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblInsZip" id="txtLblInsZip" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionInsZip" id="txtInstuctioInsZip"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>
+							<tr>						
+							<td data-title="Attribute">Country</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyCountry" id="chkReadOnlyCountry"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityCountry" id="chkVisibilityCountry"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryCountry" id="chkMandatoryCountry"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblCountry" id="txtLblCountry" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionCountry" id="txtInstuctioCountry"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>
+							<tr>						
+							<td data-title="Attribute">Phone</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyPhone" id="chkReadOnlyPhone"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityPhone" id="chkVisibilityPhone"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryPhone" id="chkMandatoryPhone"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblPhone" id="txtLblPhone" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionPhone" id="txtInstuctioPhone"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>
+							<tr>						
+							<td data-title="Attribute">Alternate Phone</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyAltPhone" id="chkReadOnlyAltPhone"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityAltPhone" id="chkVisibilityAltPhone"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryAltPhone" id="chkMandatoryAltPhone"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblAltPhone" id="txtLblAltPhone" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionAltPhone" id="txtInstuctioAltPhone"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>
+							<tr>						
+							<td data-title="Attribute">Inforce GRP LTD Benefit</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyInGrpLtdBen" id="chkReadOnlyInGrpLtdBen"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityInGrpLtdBen" id="chkVisibilityInGrpLtdBen"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryInGrpLtdBen" id="chkMandatoryInGrpLtdBen"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblInGrpLtdBen" id="txtLblInGrpLtdBen" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionInGrpLtdBen" id="txtInstuctioInGrpLtdBen"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>		
+							<tr>						
+							<td data-title="Attribute">Inforce IDI Benefit</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyInIDIBen" id="chkReadOnlyInIDIBen"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityInIDIBen" id="chkVisibilityInIDIBen"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryInIDIBen" id="chkMandatoryInIDIBen"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblInIDIBen" id="txtLblInIDIBen" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionInIDIBen" id="txtInstuctioInIDIBen"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>		
+							<tr>						
+							<td data-title="Attribute">Inforce IDI Benefit 2</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyInIDIBen2" id="chkReadOnlyInIDIBen2"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityInIDIBen2" id="chkVisibilityInIDIBen2"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryInIDIBen2" id="chkMandatoryInIDIBen2"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblInIDIBen2" id="txtLblInIDIBen2" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionInIDIBen2" id="txtInstuctioInIDIBen2"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>		
+							<tr>						
+							<td data-title="Attribute">Other Inforce Benefit</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyOthrInfBen" id="chkReadOnlyOthrInfBen"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityOthrInfBen" id="chkVisibilityOthrInfBen"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryOthrInfBen" id="chkMandatoryOthrInfBen"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblOthrInfBen" id="txtLblOthrInfBen" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionOthrInfBen" id="txtInstuctioOthrInfBen"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>		
+							<tr>						
+							<td data-title="Attribute">IDI Benefit Increase</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyIdiBenIncrs" id="chkReadOnlyIdiBenIncrs"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityIdiBenIncrs" id="chkVisibilityIdiBenIncrs"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryIdiBenIncrs" id="chkMandatoryIdiBenIncrs"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblIdiBenIncrs" id="txtLblIdiBenIncrs" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionIdiBenIncrs" id="txtInstuctioIdiBenIncrs"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>
+							<tr>						
+							<td data-title="Attribute">Other Inforce Benefit(s) Notes</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyOthrInfBenNote" id="chkReadOnlyOthrInfBenNote"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityOthrInfBenNote" id="chkVisibilityOthrInfBenNote"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryOthrInfBenNote" id="chkMandatoryOthrInfBenNote"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblOthrInfBenNote" id="txtLblOthrInfBenNote" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionOthrInfBenNote" id="txtInstuctioOthrInfBenNote"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+								
+								
+								
+								
+								<tr>						
+							<td data-title="Attribute">TTD Benefit Custom</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTtdBenCust" id="chkReadOnlyTtdBenCust"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTtdBenCust" id="chkVisibilityTtdBenCust"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTtdBenCust" id="chkMandatoryTtdBenCust"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTtdBenCust" id="txtLblTtdBenCust" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTtdBenCust" id="txtInstuctioTtdBenCust"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">PTD Lump Sum Custom</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyPtdLumpSumCust" id="chkReadOnlyPtdLumpSumCust"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityPtdLumpSumCust" id="chkVisibilityPtdLumpSumCust"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryPtdLumpSumCust" id="chkMandatoryPtdLumpSumCust"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblPtdLumpSumCust" id="txtLblPtdLumpSumCust" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionPtdLumpSumCust" id="txtInstuctioPtdLumpSumCust"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">IDI_PremMode</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyIdiPremMode" id="chkReadOnlyIdiPremMode"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityIdiPremMode" id="chkVisibilityIdiPremMode"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryIdiPremMode" id="chkMandatoryIdiPremMode"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblIdiPremMode" id="txtLblIdiPremMode" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionIdiPremMode" id="txtInstuctioIdiPremMode"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">IDI Mandatory Benefit</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyIdiManBen" id="chkReadOnlyIdiManBen"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityIdiManBen" id="chkVisibilityIdiManBene"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryIdiManBen" id="chkMandatoryIdiManBen"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblIdiManBen" id="txtLblIdiManBen" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionIdiManBen" id="txtInstuctioIdiManBen"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">IDI Mandatory Premium</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyIdiManPrm" id="chkReadOnlyIdiManPrm"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityIdiManPrm" id="chkVisibilityIdiManPrm"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryIdiManPrm" id="chkMandatoryIdiManPrm"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblIdiManPrm" id="txtLblIdiManPrm" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionIdiManPrm" id="txtInstuctioIdiManPrm"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">IDI Mandatory Premium Smoker</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyIdiManPrmSmoker" id="chkReadOnlyIdiManPrmSmoker"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityIdiManPrmSmoker" id="chkVisibilityIdiManPrmSmoker"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryIdiManPrmSmoker" id="chkMandatoryIdiManPrmSmoker"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblIdiManPrmSmoker" id="txtLblIdiManPrmSmoker" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionIdiManPrmSmoker" id="txtInstuctioIdiManPrmSmoker"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">IDI Mandatory Premium COLA</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyIdiManPrmCOLA" id="chkReadOnlyIdiManPrmCOLA"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityIdiManPrmCOLA" id="chkVisibilityIdiManPrmCOLA"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryIdiManPrmCOLA" id="chkMandatoryIdiManPrmCOLA"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblIdiManPrmCOLA" id="txtLblIdiManPrmCOLA" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionIdiManPrmCOLA" id="txtInstuctioIdiManPrmCOLA"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">IDI Mandatory Premium COLA Smoker</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyIdiManPrmCOLASmoker" id="chkReadOnlyIdiManPrmCOLASmoker"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityIdiManPrmCOLASmoker" id="chkVisibilityIdiManPrmCOLASmoker"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryIdiManPrmCOLASmoker" id="chkMandatoryIdiManPrmCOLASmoker"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblIdiManPrmCOLASmoker" id="txtLblIdiManPrmCOLASmoker" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionIdiManPrmCOLASmoker" id="txtInstuctioIdiManPrmCOLASmoker"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>
+							
+							
+							<tr>						
+							<td data-title="Attribute">IDI Voluntary 1 Benefit</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyIdiVol1Ben" id="chkReadOnlyIdiVol1Ben"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityIdiVol1Ben" id="chkVisibilityIdiVol1Ben"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryIdiVol1Ben" id="chkMandatoryIdiVol1Ben"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblIdiVol1Ben" id="txtLblIdiVol1Ben" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionIdiVol1Ben" id="txtInstuctioIdiVol1Ben"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">IDI Voluntary 1 Premium</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyIdiVol1Prm" id="chkReadOnlyIdiVol1Prm"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityIdiVol1Prm" id="chkVisibilityIdiVol1Prm"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryIdiVol1Prm" id="chkMandatoryIdiVol1Prm"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblIdiVol1Prm" id="txtLblIdiVol1Prm" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionIdiVol1Prm" id="txtInstuctioIdiVol1Prm"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">IDI Voluntary 1 Premium Smoker</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyIdiVol1PrmSmoker" id="chkReadOnlyIdiVol1PrmSmoker"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityIdiVol1PrmSmoker" id="chkVisibilityIdiVol1PrmSmoker"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryIdiVol1PrmSmoker" id="chkMandatoryIdiVol1PrmSmoker"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblIdiVol1PrmSmoker" id="txtLblIdiVol1PrmSmoker" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionIdiVol1PrmSmoker" id="txtInstuctioIdiVol1PrmSmoker"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">IDI Voluntary 1 Premium COLA</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyIdiVol1PrmCOLA" id="chkReadOnlyIdiVol1PrmCOLA"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityIdiVol1PrmCOLA" id="chkVisibilityIdiVol1PrmCOLA"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryIdiVol1PrmCOLA" id="chkMandatoryIdiVol1PrmCOLA"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblIdiVol1PrmCOLA" id="txtLblIdiVol1PrmCOLA" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionIdiVol1PrmCOLA" id="txtInstuctioIdiVol1PrmCOLA"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">IDI  Voluntary 1 Premium COLA Smoker</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyIdiVol1PrmCOLASmoker" id="chkReadOnlyIdiVol1PrmCOLASmoker"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityIdiVol1PrmCOLASmoker" id="chkVisibilityIdiVol1PrmCOLASmoker"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryIdiVol1PrmCOLASmoker" id="chkMandatoryIdiVol1PrmCOLASmoker"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblIdiVol1PrmCOLASmoker" id="txtLblIdiVol1PrmCOLASmoker" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionIdiVol1PrmCOLASmoker" id="txtInstuctioIdiVol1PrmCOLASmoker"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>
+							
+							<tr>						
+							<td data-title="Attribute">IDI Voluntary 2 Benefit</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyIdiVol2Ben" id="chkReadOnlyIdiVol2Ben"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityIdiVol2Ben" id="chkVisibilityIdiVol2Ben"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryIdiVol2Ben" id="chkMandatoryIdiVol2Ben"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblIdiVol2Ben" id="txtLblIdiVol2Ben" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionIdiVol2Ben" id="txtInstuctioIdiVol2Ben"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">IDI Voluntary 1 Premium</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyIdiVol2Prm" id="chkReadOnlyIdiVol2Prm"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityIdiVol2Prm" id="chkVisibilityIdiVol2Prm"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryIdiVol2Prm" id="chkMandatoryIdiVol2Prm"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblIdiVol2Prm" id="txtLblIdiVol2Prm" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionIdiVol2Prm" id="txtInstuctioIdiVol2Prm"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">IDI Voluntary 1 Premium Smoker</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyIdiVol2PrmSmoker" id="chkReadOnlyIdiVol2PrmSmoker"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityIdiVol2PrmSmoker" id="chkVisibilityIdiVol2PrmSmoker"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryIdiVol2PrmSmoker" id="chkMandatoryIdiVol2PrmSmoker"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblIdiVol2PrmSmoker" id="txtLblIdiVol2PrmSmoker" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionIdiVol2PrmSmoker" id="txtInstuctioIdiVol2PrmSmoker"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">IDI Voluntary 1 Premium COLA</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyIdiVol2PrmCOLA" id="chkReadOnlyIdiVol2PrmCOLA"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityIdiVol2PrmCOLA" id="chkVisibilityIdiVol2PrmCOLA"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryIdiVol2PrmCOLA" id="chkMandatoryIdiVol2PrmCOLA"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblIdiVol2PrmCOLA" id="txtLblIdiVol2PrmCOLA" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionIdiVol2PrmCOLA" id="txtInstuctioIdiVol2PrmCOLA"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">IDI  Voluntary 1 Premium COLA Smoker</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyIdiVol2PrmCOLASmoker" id="chkReadOnlyIdiVol2PrmCOLASmoker"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityIdiVol2PrmCOLASmoker" id="chkVisibilityIdiVol2PrmCOLASmoker"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryIdiVol2PrmCOLASmoker" id="chkMandatoryIdiVol2PrmCOLASmoker"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblIdiVol2PrmCOLASmoker" id="txtLblIdiVol2PrmCOLASmoker" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionIdiVol2PrmCOLASmoker" id="txtInstuctioIdiVol2PrmCOLASmoker"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>
+							
+							
+							<tr>						
+							<td data-title="Attribute">IDI Voluntary 3 Benefit</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyIdiVol3Ben" id="chkReadOnlyIdiVol3Ben"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityIdiVol3Ben" id="chkVisibilityIdiVol3Ben"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryIdiVol3Ben" id="chkMandatoryIdiVol3Ben"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblIdiVol3Ben" id="txtLblIdiVol3Ben" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionIdiVol3Ben" id="txtInstuctioIdiVol3Ben"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">IDI Voluntary 3 Premium</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyIdiVol3Prm" id="chkReadOnlyIdiVol3Prm"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityIdiVol3Prm" id="chkVisibilityIdiVol3Prm"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryIdiVol3Prm" id="chkMandatoryIdiVol3Prm"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblIdiVol3Prm" id="txtLblIdiVol3Prm" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionIdiVol3Prm" id="txtInstuctioIdiVol3Prm"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">IDI Voluntary 3 Premium Smoker</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyIdiVol3PrmSmoker" id="chkReadOnlyIdiVol3PrmSmoker"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityIdiVol3PrmSmoker" id="chkVisibilityIdiVol3PrmSmoker"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryIdiVol3PrmSmoker" id="chkMandatoryIdiVol3PrmSmoker"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblIdiVol3PrmSmoker" id="txtLblIdiVol3PrmSmoker" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionIdiVol3PrmSmoker" id="txtInstuctioIdiVol3PrmSmoker"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">IDI Voluntary 3 Premium COLA</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyIdiVol3PrmCOLA" id="chkReadOnlyIdiVol3PrmCOLA"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityIdiVol3PrmCOLA" id="chkVisibilityIdiVol3PrmCOLA"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryIdiVol3PrmCOLA" id="chkMandatoryIdiVol3PrmCOLA"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblIdiVol3PrmCOLA" id="txtLblIdiVol3PrmCOLA" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionIdiVol3PrmCOLA" id="txtInstuctioIdiVol3PrmCOLA"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">IDI  Voluntary 3 Premium COLA Smoker</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyIdiVol3PrmCOLASmoker" id="chkReadOnlyIdiVol3PrmCOLASmoker"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityIdiVol3PrmCOLASmoker" id="chkVisibilityIdiVol3PrmCOLASmoker"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryIdiVol3PrmCOLASmoker" id="chkMandatoryIdiVol3PrmCOLASmoker"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblIdiVol3PrmCOLASmoker" id="txtLblIdiVol3PrmCOLASmoker" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionIdiVol3PrmCOLASmoker" id="txtInstuctioIdiVol3PrmCOLASmoker"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>
+							
+							<tr>						
+							<td data-title="Attribute">IDI CAT Benefit</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyIdiCatBen" id="chkReadOnlyIdiCatBen"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityIdiCatBen" id="chkVisibilityIdiCatBen"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryIdiCatBen" id="chkMandatoryIdiCatBen"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblIdiCatBen" id="txtLblIdiCatBen" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionIdiCatBen" id="txtInstuctioIdiCatBene"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">Dual Enrollment Situs State</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyDualEnrolmentSitusState" id="chkReadOnlyDualEnrolmentSitusState"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityDualEnrolmentSitusState" id="chkVisibilityDualEnrolmentSitusState"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryDualEnrolmentSitusState" id="chkMandatoryDualEnrolmentSitusState"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblOthrInfBenNote" id="txtLblDualEnrolmentSitusState" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionDualEnrolmentSitusState" id="txtInstuctioDualEnrolmentSitusState"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+		
+							<tr>						
+							<td data-title="Attribute">Tag1</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag1" id="chkReadOnlyTag1"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag1" id="chkVisibilityTag1"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag1" id="chkMandatoryTag1"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag1" id="txtLblTag1" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag1" id="txtInstuctioTag1"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">Tag2</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag2" id="chkReadOnlyTag2"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag2" id="chkVisibilityTag2"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag2" id="chkMandatoryTag2"  class="lcs_check lcs_tt2 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag2" id="txtLblTag2" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag2" id="txtInstuctioTag2"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">Tag3</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag3" id="chkReadOnlyTag3"  class="lcs_check lcs_tt3 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag3" id="chkVisibilityTag3"  class="lcs_check lcs_tt3 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag3" id="chkMandatoryTag3"  class="lcs_check lcs_tt3 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag3" id="txtLblTag3" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag3" id="txtInstuctioTag3"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">Tag4</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag4" id="chkReadOnlyTag4"  class="lcs_check lcs_tt4 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag4" id="chkVisibilityTag4"  class="lcs_check lcs_tt4 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag4" id="chkMandatoryTag4"  class="lcs_check lcs_tt4 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag4" id="txtLblTag4" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag4" id="txtInstuctioTag4"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">Tag5</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag5" id="chkReadOnlyTag5"  class="lcs_check lcs_tt5 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag5" id="chkVisibilityTag5"  class="lcs_check lcs_tt5 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag5" id="chkMandatoryTag5"  class="lcs_check lcs_tt5 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag5" id="txtLblTag5" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag5" id="txtInstuctioTag5"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">Tag6</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag6" id="chkReadOnlyTag6"  class="lcs_check lcs_tt6 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag6" id="chkVisibilityTag6"  class="lcs_check lcs_tt6 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag6" id="chkMandatoryTag6"  class="lcs_check lcs_tt6 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag6" id="txtLblTag6" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag6" id="txtInstuctioTag6"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">Tag7</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag7" id="chkReadOnlyTag7"  class="lcs_check lcs_tt7 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag7" id="chkVisibilityTag7"  class="lcs_check lcs_tt7 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag7" id="chkMandatoryTag7"  class="lcs_check lcs_tt7 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag7" id="txtLblTag7" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag7" id="txtInstuctioTag7"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">Tag8</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag8" id="chkReadOnlyTag8"  class="lcs_check lcs_tt8 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag8" id="chkVisibilityTag8"  class="lcs_check lcs_tt8 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag8" id="chkMandatoryTag8"  class="lcs_check lcs_tt8 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag8" id="txtLblTag8" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag8" id="txtInstuctioTag8"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">Tag9</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag9" id="chkReadOnlyTag9"  class="lcs_check lcs_tt9 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag9" id="chkVisibilityTag9"  class="lcs_check lcs_tt9 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag9" id="chkMandatoryTag9"  class="lcs_check lcs_tt9 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag9" id="txtLblTag9" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag9" id="txtInstuctioTag9"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">Tag10</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag10" id="chkReadOnlyTag10"  class="lcs_check lcs_tt10 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag10" id="chkVisibilityTag10"  class="lcs_check lcs_tt10 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag10" id="chkMandatoryTag10"  class="lcs_check lcs_tt10 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag10" id="txtLblTag10" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag10" id="txtInstuctioTag10"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">Tag11</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag11" id="chkReadOnlyTag11"  class="lcs_check lcs_tt11 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag11" id="chkVisibilityTag11"  class="lcs_check lcs_tt11 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag11" id="chkMandatoryTag11"  class="lcs_check lcs_tt11 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag11" id="txtLblTag11" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag11" id="txtInstuctioTag11"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">Tag12</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag12" id="chkReadOnlyTag12"  class="lcs_check lcs_tt12 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag12" id="chkVisibilityTag12"  class="lcs_check lcs_tt12 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag12" id="chkMandatoryTag12"  class="lcs_check lcs_tt12 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag12" id="txtLblTag12" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag12" id="txtInstuctioTag12"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">Tag13</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag13" id="chkReadOnlyTag13"  class="lcs_check lcs_tt13 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag13" id="chkVisibilityTag13"  class="lcs_check lcs_tt13 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag13" id="chkMandatoryTag13"  class="lcs_check lcs_tt13 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag13" id="txtLblTag13" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag13" id="txtInstuctioTag13"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">Tag14</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag14" id="chkReadOnlyTag14"  class="lcs_check lcs_tt14 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag14" id="chkVisibilityTag14"  class="lcs_check lcs_tt14 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag14" id="chkMandatoryTag14"  class="lcs_check lcs_tt14 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag14" id="txtLblTag14" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag14" id="txtInstuctioTag14"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">Tag15</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag15" id="chkReadOnlyTag15"  class="lcs_check lcs_tt15 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag15" id="chkVisibilityTag15"  class="lcs_check lcs_tt15 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag15" id="chkMandatoryTag15"  class="lcs_check lcs_tt15 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag15" id="txtLblTag15" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag15" id="txtInstuctioTag15"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">Tag16</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag16" id="chkReadOnlyTag16"  class="lcs_check lcs_tt16 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag16" id="chkVisibilityTag16"  class="lcs_check lcs_tt16 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag16" id="chkMandatoryTag16"  class="lcs_check lcs_tt16 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag16" id="txtLblTag16" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag16" id="txtInstuctioTag16"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">Tag17</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag17" id="chkReadOnlyTag17"  class="lcs_check lcs_tt17 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag17" id="chkVisibilityTag17"  class="lcs_check lcs_tt17 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag17" id="chkMandatoryTag17"  class="lcs_check lcs_tt17 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag17" id="txtLblTag17" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag17" id="txtInstuctioTag17"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">Tag18</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag18" id="chkReadOnlyTag18"  class="lcs_check lcs_tt18 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag18" id="chkVisibilityTag18"  class="lcs_check lcs_tt18 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag18" id="chkMandatoryTag18"  class="lcs_check lcs_tt18 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag18" id="txtLblTag18" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag18" id="txtInstuctioTag18"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">Tag19</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag19" id="chkReadOnlyTag19"  class="lcs_check lcs_tt19 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag19" id="chkVisibilityTag19"  class="lcs_check lcs_tt19 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag19" id="chkMandatoryTag19"  class="lcs_check lcs_tt19 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag19" id="txtLblTag19" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag19" id="txtInstuctioTag19"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">Tag20</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag20" id="chkReadOnlyTag20"  class="lcs_check lcs_tt20 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag20" id="chkVisibilityTag20"  class="lcs_check lcs_tt20 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag20" id="chkMandatoryTag20"  class="lcs_check lcs_tt20 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag20" id="txtLblTag20" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag20" id="txtInstuctioTag20"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">Tag21</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag21" id="chkReadOnlyTag21"  class="lcs_check lcs_tt21 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag21" id="chkVisibilityTag21"  class="lcs_check lcs_tt21 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag21" id="chkMandatoryTag21"  class="lcs_check lcs_tt21 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag21" id="txtLblTag21" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag21" id="txtInstuctioTag21"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">Tag22</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag22" id="chkReadOnlyTag22"  class="lcs_check lcs_tt22 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag22" id="chkVisibilityTag22"  class="lcs_check lcs_tt22 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag22" id="chkMandatoryTag22"  class="lcs_check lcs_tt22 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag22" id="txtLblTag22" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag22" id="txtInstuctioTag22"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">Tag23</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag23" id="chkReadOnlyTag23"  class="lcs_check lcs_tt23 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag23" id="chkVisibilityTag23"  class="lcs_check lcs_tt23 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag23" id="chkMandatoryTag23"  class="lcs_check lcs_tt23 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag23" id="txtLblTag23" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag23" id="txtInstuctioTag23"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">Tag24</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag24" id="chkReadOnlyTag24"  class="lcs_check lcs_tt24 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag24" id="chkVisibilityTag24"  class="lcs_check lcs_tt24 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag24" id="chkMandatoryTag24"  class="lcs_check lcs_tt24 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag24" id="txtLblTag24" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag24" id="txtInstuctioTag24"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">Tag25</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag25" id="chkReadOnlyTag25"  class="lcs_check lcs_tt25 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag25" id="chkVisibilityTag25"  class="lcs_check lcs_tt25 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag25" id="chkMandatoryTag25"  class="lcs_check lcs_tt25 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag25" id="txtLblTag25" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag25" id="txtInstuctioTag25"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">Tag26</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag26" id="chkReadOnlyTag26"  class="lcs_check lcs_tt26 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag26" id="chkVisibilityTag26"  class="lcs_check lcs_tt26 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag26" id="chkMandatoryTag26"  class="lcs_check lcs_tt26 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag26" id="txtLblTag26" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag26" id="txtInstuctioTag26"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">Tag27</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag27" id="chkReadOnlyTag27"  class="lcs_check lcs_tt27 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag27" id="chkVisibilityTag27"  class="lcs_check lcs_tt27 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag27" id="chkMandatoryTag27"  class="lcs_check lcs_tt27 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag27" id="txtLblTag27" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag27" id="txtInstuctioTag27"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">Tag28</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag28" id="chkReadOnlyTag28"  class="lcs_check lcs_tt28 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag28" id="chkVisibilityTag28"  class="lcs_check lcs_tt28 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag28" id="chkMandatoryTag28"  class="lcs_check lcs_tt28 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag28" id="txtLblTag28" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag28" id="txtInstuctioTag28"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">Tag29</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag29" id="chkReadOnlyTag29"  class="lcs_check lcs_tt29 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag29" id="chkVisibilityTag29"  class="lcs_check lcs_tt29 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag29" id="chkMandatoryTag29"  class="lcs_check lcs_tt29 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag29" id="txtLblTag29" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag29" id="txtInstuctioTag29"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+								
+								
+								<tr>						
+							<td data-title="Attribute">Tag30</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag30" id="chkReadOnlyTag30"  class="lcs_check lcs_tt30 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag30" id="chkVisibilityTag30"  class="lcs_check lcs_tt30 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag30" id="chkMandatoryTag30"  class="lcs_check lcs_tt30 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag30" id="txtLblTag30" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag30" id="txtInstuctioTag30"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">Tag31</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag31" id="chkReadOnlyTag31"  class="lcs_check lcs_tt31 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag31" id="chkVisibilityTag31"  class="lcs_check lcs_tt31 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag31" id="chkMandatoryTag31"  class="lcs_check lcs_tt31 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag31" id="txtLblTag31" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag31" id="txtInstuctioTag31"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>		
+							<td data-title="Attribute">Tag32</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag32" id="chkReadOnlyTag32"  class="lcs_check lcs_tt32 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag32" id="chkVisibilityTag32"  class="lcs_check lcs_tt32 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag32" id="chkMandatoryTag32"  class="lcs_check lcs_tt32 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag32" id="txtLblTag32" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag32" id="txtInstuctioTag32"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>		
+													
+
+							<tr>						
+							<td data-title="Attribute">Tag33</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag33" id="chkReadOnlyTag33"  class="lcs_check lcs_tt33 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag33" id="chkVisibilityTag33"  class="lcs_check lcs_tt33 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag33" id="chkMandatoryTag33"  class="lcs_check lcs_tt33 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag33" id="txtLblTag33" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag33" id="txtInstuctioTag33"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">Tag34</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag34" id="chkReadOnlyTag34"  class="lcs_check lcs_tt34 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag34" id="chkVisibilityTag34"  class="lcs_check lcs_tt34 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag34" id="chkMandatoryTag34"  class="lcs_check lcs_tt34 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag34" id="txtLblTag34" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag34" id="txtInstuctioTag34"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">Tag35</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag35" id="chkReadOnlyTag35"  class="lcs_check lcs_tt35 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag35" id="chkVisibilityTag35"  class="lcs_check lcs_tt35 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag35" id="chkMandatoryTag35"  class="lcs_check lcs_tt35 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag35" id="txtLblTag35" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag35" id="txtInstuctioTag35"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">Tag36</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag36" id="chkReadOnlyTag36"  class="lcs_check lcs_tt36 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag36" id="chkVisibilityTag36"  class="lcs_check lcs_tt36 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag36" id="chkMandatoryTag36"  class="lcs_check lcs_tt36 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag36" id="txtLblTag36" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag36" id="txtInstuctioTag36"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">Tag37</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag37" id="chkReadOnlyTag37"  class="lcs_check lcs_tt37 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag37" id="chkVisibilityTag37"  class="lcs_check lcs_tt37 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag37" id="chkMandatoryTag37"  class="lcs_check lcs_tt37 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag37" id="txtLblTag37" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag37" id="txtInstuctioTag37"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">Tag38</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag38" id="chkReadOnlyTag38"  class="lcs_check lcs_tt38 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag38" id="chkVisibilityTag38"  class="lcs_check lcs_tt38 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag38" id="chkMandatoryTag38"  class="lcs_check lcs_tt38 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag38" id="txtLblTag38" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag38" id="txtInstuctioTag38"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">Tag39</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag39" id="chkReadOnlyTag39"  class="lcs_check lcs_tt39 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag39" id="chkVisibilityTag39"  class="lcs_check lcs_tt39 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag39" id="chkMandatoryTag39"  class="lcs_check lcs_tt39 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag39" id="txtLblTag39" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag39" id="txtInstuctioTag39"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>
+							<tr>		
+							<td data-title="Attribute">Tag40</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag40" id="chkReadOnlyTag40"  class="lcs_check lcs_tt40 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag40" id="chkVisibilityTag40"  class="lcs_check lcs_tt40 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag40" id="chkMandatoryTag40"  class="lcs_check lcs_tt40 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag40" id="txtLblTag40" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag40" id="txtInstuctioTag40"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>		
+							<tr>
+														<td data-title="Attribute">Tag41</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag41" id="chkReadOnlyTag41"  class="lcs_check lcs_tt41 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag41" id="chkVisibilityTag41"  class="lcs_check lcs_tt41 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag41" id="chkMandatoryTag41"  class="lcs_check lcs_tt41 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag41" id="txtLblTag41" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag41" id="txtInstuctioTag41"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+														<tr>
+							<td data-title="Attribute">Tag42</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag42" id="chkReadOnlyTag42"  class="lcs_check lcs_tt42 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag42" id="chkVisibilityTag42"  class="lcs_check lcs_tt42 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag42" id="chkMandatoryTag42"  class="lcs_check lcs_tt42 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag42" id="txtLblTag42" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag42" id="txtInstuctioTag42"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+														<tr>
+							<td data-title="Attribute">Tag43</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag43" id="chkReadOnlyTag43"  class="lcs_check lcs_tt43 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag43" id="chkVisibilityTag43"  class="lcs_check lcs_tt43 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag43" id="chkMandatoryTag43"  class="lcs_check lcs_tt43 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag43" id="txtLblTag43" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag43" id="txtInstuctioTag43"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>		
+							
+							<tr>						
+							<td data-title="Attribute">Tag44</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag44" id="chkReadOnlyTag44"  class="lcs_check lcs_tt44 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag44" id="chkVisibilityTag44"  class="lcs_check lcs_tt44 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag44" id="chkMandatoryTag44"  class="lcs_check lcs_tt44 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag44" id="txtLblTag44" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag44" id="txtInstuctioTag44"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">Tag45</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag45" id="chkReadOnlyTag45"  class="lcs_check lcs_tt45 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag45" id="chkVisibilityTag45"  class="lcs_check lcs_tt45 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag45" id="chkMandatoryTag45"  class="lcs_check lcs_tt45 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag45" id="txtLblTag45" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag45" id="txtInstuctioTag45"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">Tag46</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag46" id="chkReadOnlyTag46"  class="lcs_check lcs_tt46 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag46" id="chkVisibilityTag46"  class="lcs_check lcs_tt46 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag46" id="chkMandatoryTag46"  class="lcs_check lcs_tt46 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag46" id="txtLblTag46" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag46" id="txtInstuctioTag46"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">Tag47</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag47" id="chkReadOnlyTag47"  class="lcs_check lcs_tt47 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag47" id="chkVisibilityTag47"  class="lcs_check lcs_tt47 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag47" id="chkMandatoryTag47"  class="lcs_check lcs_tt47 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag47" id="txtLblTag47" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag47" id="txtInstuctioTag47"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">Tag48</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag48" id="chkReadOnlyTag48"  class="lcs_check lcs_tt48 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag48" id="chkVisibilityTag48"  class="lcs_check lcs_tt48 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag48" id="chkMandatoryTag48"  class="lcs_check lcs_tt48 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag48" id="txtLblTag48" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag48" id="txtInstuctioTag48"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>						
+							<td data-title="Attribute">Tag49</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag49" id="chkReadOnlyTag49"  class="lcs_check lcs_tt49 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag49" id="chkVisibilityTag49"  class="lcs_check lcs_tt49 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag49" id="chkMandatoryTag49"  class="lcs_check lcs_tt49 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag49" id="txtLblTag49" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag49" id="txtInstuctioTag49"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>	
+							<tr>
+							<td data-title="Attribute">Tag50</td>
+							<td data-title="Read-only"><input type="checkbox" name="chkReadOnlyTag50" id="chkReadOnlyTag50"  class="lcs_check lcs_tt50 census" /></td>
+							<td data-title="Visibility"><input type="checkbox" name="chkVisibilityTag50" id="chkVisibilityTag50"  class="lcs_check lcs_tt50 census" /></td>
+							<td data-title="Mandatory"><input type="checkbox" name="chkMandatoryTag50" id="chkMandatoryTag50"  class="lcs_check lcs_tt50 census" /></td>
+							<td data-title="Label" class='suggestedQ'>
+							<div class="form-group">                                                
+							<input  name="txtLblTag50" id="txtLblTag50" type="text" class="form-control" >
+								</div>
+							</td>
+								<td data-title="Instruction" class='suggestedI'>
+									<div class="form-group">                                                
+									<textarea name="txtInstuctionTag50" id="txtInstuctioTag50"  class="form-control" ></textarea>
+									</div>
+								</td>								
+							</tr>																			
+						</tbody>
+					</table>
+					<button class="btn btn-primary btn-lg back floatLeft" onclick="redirecttoScreen('instruction');"><i class='fa fa-hand-o-left' aria-hidden="true"></i>Back</button>
+					<button class="btn btn-primary btn-lg pull-right step float" onclick="saveCensusInfo();">Proceed<i class='fa fa-hand-o-right' aria-hidden="true"></i></button>
+				</div>	
+				
+					</html>

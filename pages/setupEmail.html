@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+   <title>Setup Enrollment</title>
+</head>
+			<div id='email' class='tabcontent'>	
+					<div class="panel panel-default">
+						<div class="panel-heading title"  >
+							<h3 class="panel-title">								
+								Setup Email									 								
+							</h3>
+						</div>
+					</div>
+					<div class="panel-group" id="accordion1" role="tablist" aria-multiselectable="true">
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingSeven">
+								<h4 class="panel-title row clearfix">								
+									<span class='col-xs-10 headTxt'><i class="accordion_icon fa fa-th-large"></i> Emails </span> 
+									<!-- <i class="fa fa-plus-circle" aria-hidden="true" title='Add User defined templates' id='addUserDefinedTemplateRow'></i>							 -->
+								<span class='col-xs-2 text-right'><button type="button" class="fa fa-plus-circle" onclick="hideShowEmailPannel();"></button></span>
+								</h4>
+							</div>
+							<div class="panel-collapse" role="tabpanel" aria-labelledby="headingSeven">
+								<div class="panel-body clearfix">								
+									<div class='news'>										
+										
+									</div>																						
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default " id='newUserDefinedTeplate'>
+							<div class="panel-heading" role="tab" id="headingSix">
+								<h4 class="panel-title row clearfix">								
+									<span class='col-xs-10 headTxt'><i class="accordion_icon fa fa-th-large"></i> Create Email Template</span>																
+								</h4>
+							</div>
+							<div class="panel panel-default">								
+								<div class='panel-body' id='createEmailTemplateSection'>
+									<div class='clearfix row'>									
+										<div class='nopad-right col-sm-3 col-xs-6 clearfix'>
+											<div class='col-xs-5 nopad-left'><label>Template Name:</label></div>
+											<div class='col-xs-7'><input id="emailTemplateName" name="userName" type="text" class="form-control" aria-required="true"></div>											
+										</div>
+										<div class='nopad-left col-sm-4 col-xs-6 clearfix eventBasedHidden'>
+											<div class='col-xs-2 nopad-right'><label>Date:</label></div>
+											<div class='col-xs-10 nopad-right' id='datePicker1'>
+												<div class="input-group" data-date="" data-date-format="mm/dd/yyyy" data-date-viewmode="years">						
+													<input class="span2 datepicker" size="16" type="text" value="" readonly="">
+													<span class="fa fa-calendar"></span>
+												</div>
+											</div>
+										</div>
+										<div class='nopad-left col-sm-5 col-xs-6 clearfix'>
+											<div class='eventBasedHidden'>
+												<div class='col-xs-1 nopad'><label>Time:</label></div>
+												<div class='col-xs-5 nopad'>
+													<div class="form-group">
+														<div class='input-group date' id='datetimepicker3'>
+															<input type='text' class="form-control" />
+															<span class="input-group-addon">
+																<span class="glyphicon glyphicon-time"></span>
+															</span>
+														</div>
+													</div>
+												</div>
+											</div>											
+											<div class='col-xs-4 nopad-right'><label>Include Sponsor Logo: </label></div>
+											<div class='col-xs-2'><input type="checkbox" name="radio-1" value="1" class="lcs_check lcs_tt2 emailTemplateOn" autocomplete="off"/></div>											
+										</div>																				
+									</div>
+									<div class='clearfix row'>	
+										<div class='nopad-right col-sm-3 col-xs-6 clearfix eventBasedHidden'>
+											<div class='col-xs-5 nopad-left'><label>Recipient Type:</label></div>
+											<div class='col-xs-7 form-group'>
+												<select class="form-control" id='emailRecipientType'>
+													<option value='0'>Select</option>
+													<option value='All'>All</option>
+													<option value='Unsubmitted Users Only'>Unsubmitted Users Only</option>
+													<option value='Selected Insureds only'>Selected Insureds only</option>																																				
+												</select>
+											</div>
+										</div>										
+										<div class='nopad-left col-sm-9 col-xs-6 clearfix' id='emailRecipient'>
+											<div class='col-xs-1'><label>Recipients:</label></div>
+											<div class='col-xs-11'>
+												<select class="js-example-basic-multiple form-control" name="states[]" multiple="multiple">
+													<option value="AL">All</option>
+													<option>Monica Smith</option>
+													<option>Mark Johnson</option>
+													<option>Janet Rosowski</option>
+													<option>Chris Johnatan Overtunk</option>
+													<option>Kim Smith</option>
+													<option>John Smith</option>																													
+												</select>
+											</div>
+										</div>
+									</div>																		
+									<div class='news gap'>										
+										<div class="news-content">
+											<div  class="form-group clearfix">
+												<div class='col-xs-1 nopad'><label>Tags:</label></div>
+												<div class='col-xs-11 nopad'>
+													<label class='label label-default'>[IDI Company]</label>
+													<label class='label label-default'>[Elected IDI Benefit]</label>
+													<label class='label label-default'>[Elected IDI Prem]</label>
+													<label class='label label-default'>[Elected ERA Monthly Benefit]</label>
+													<label class='label label-default'>[Elected ERA LumpSum Benefit]</label>
+													<label class='label label-default'>[Elected ERA Prem]</label>
+													<label class='label label-default'>[First Name]</label>
+													<label class='label label-default'>[Last Name]</label>
+													<label class='label label-default'>[Submission Date]</label>
+													<label class='label label-default'>[Enrollment state Date]</label>
+													<label class='label label-default'>[Enrollment end date]</label>
+													<label class='label label-default'>[Request Effective Date]</label>
+												</div>
+											</div>
+											<div  class="form-group">
+												<label>Subject Line</label>
+												<input id='emailSubjectLine' name="userName" type="text" class="form-control" aria-required="true">
+											</div>
+											<div  class="form-group">
+												<label>Email Body</label>
+												<input id='emailtemplateBody' name="userName" type="text" class="form-control" aria-required="true">
+											</div>
+										</div>
+									</div>
+									<div class='text-right'><button class="btn btn-primary btn-lg" id='saveEmailTemplate'>Save</button></div>
+									<div class='text-right'><button class="btn btn-primary btn-lg" id='updateEmailTemplate'>Update</button></div>										
+								</div>								
+							</div>							
+						</div>						
+					</div>									
+					<button class="btn btn-primary btn-lg back"><i class='fa fa-hand-o-left' aria-hidden="true"></i>Back</button>
+					<button class="btn btn-primary btn-lg pull-right step">Proceed<i class='fa fa-hand-o-right' aria-hidden="true"></i></button>					
+				</div>			
+							
+				
+					</html>
